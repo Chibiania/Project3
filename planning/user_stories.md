@@ -15,7 +15,7 @@
 -	Click on country to view snacks of that country in a different view
 
 #### Gold
-using map api-----
+using map api---
 - country is shown on a map as opposed to just listing it
 - for the search bar, show map of country
 - video pops up when sorting by country (maybe buzzfeed stuff)
