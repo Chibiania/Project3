@@ -4,10 +4,9 @@ class CommentsController < ApplicationController
     @comments = @snack.comments
   end
 
-  def created_at
+  def create
     @snack = Snack.find(params[:snack_id])
     @comment = @snack.comments.create(comments_params)
-    redirect_to snack_path(@snack)
   end
 
   private
