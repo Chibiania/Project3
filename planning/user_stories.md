@@ -3,16 +3,16 @@
 ### As a user, I should be able to:
 
 #### Bronze
--	View all snacks on index page according to certain criteria (aka searching/sorting) B
--	Sort/search through list of snacks B
--	View individual snacks B
--	Have access to manufacturer’s website B
--	Like/view popularity of snack B
+-	View all snacks on index page according to certain criteria (aka searching/sorting)
+-	Sort/search through list of snacks
+-	View individual snacks
+-	Have access to manufacturer’s website
+-	Like/view popularity of snack
 
 #### Silver
--	Submit suggestion to add snack (not to update database) S
--	Add/view comments about individual snacks S
--	Click on country to view snacks of that country in a different view S
+-	Submit suggestion to add snack (not to update database)
+-	Add/view comments about individual snacks
+-	Click on country to view snacks of that country in a different view
 
 #### Gold
 using map api-----
