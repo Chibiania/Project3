@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
   def create
     @snack = Snack.find(params[:snack_id])
     @comment = @snack.comments.create(comments_params)
-    render json: @comment, status: :ok
+    render json: @comment.to_json, status: :ok
   end
 
   private
