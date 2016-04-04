@@ -9,6 +9,6 @@
     ShowFunction
   ])
   function ShowFunction(SnackFactory, $stateParams){
-    this.snack = SnackFactory.get{id: $stateParams.id});
+    this.snack = SnackFactory.get({id: $stateParams.id});
   }
 })();
