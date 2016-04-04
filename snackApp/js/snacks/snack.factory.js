@@ -8,6 +8,6 @@
     SnackFactoryFunction
   ]);
   function SnackFactoryFunction($resource){
-    return $resource("http://localhost:3000/snacks/:id");
+    return $resource("http://localhost:3000/snacks/:id.json");
   }
 })();
