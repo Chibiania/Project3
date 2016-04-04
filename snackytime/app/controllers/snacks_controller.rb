@@ -5,7 +5,6 @@ class SnacksController < ApplicationController
       format.html
       format.json{ render json: Snack.all }
     end
-
   end
 
   def show
