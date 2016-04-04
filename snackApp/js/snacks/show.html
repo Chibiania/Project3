@@ -1,9 +1,30 @@
-<p>{{SnackShow.snack.name}}</p>
-<p>{{SnackShow.country}}</p>
-<p>{{SnackShow.description}}</p>
-<p>{{SnackShow.description}}</p>
-<p>{{SnackShow.mood}}</p>
-<p>{{SnackShow.taste}}</p>
-<p>{{SnackShow.nutrition_level}}</p>
-<p>{{SnackShow.seller_url}}</p>
-<p>{{SnackShow.video_url}}</p>
+<h2>{{SnackShowViewModel.snack.name}}</h2>
+
+<img data-ng-src="{{SnackShowViewModel.snack.image_url}}" src="#" alt="SnackShowViewModel.snack.name" />
+
+<!-- <p>{{SnackShowViewModel.snack.like}}</p> -->
+<!-- <video data-ng-src="{{SnackShowViewModel.snack.video_url}}" ></video> -->
+
+<p>{{SnackShowViewModel.snack.country}}</p>
+<p>{{SnackShowViewModel.snack.description}}</p>
+
+<p>Good for</p>
+<p>Mood: {{SnackShowViewModel.snack.mood}}, Taste: {{SnackShowViewModel.snack.taste}}, Nutrition Level: {{SnackShowViewModel.snack.nutrition_level}}</p>
+
+<p>Buyer Info: {{SnackShowViewModel.snack.seller_url}}</p>
+
+<p>Add Comment:</p>
+<!-- need a comments controller? -->
+<!-- how to incorporate comments into here? -->
+<!-- we need a form for comments...don't know if this is right -->
+<!-- <form>
+  <input placeholder="Name" data-ng-model="CommentNewViewModel.comment.name"/>
+  <input placeholder="Message" data-ng-model="CommentNewViewModel.comment.message"/>
+  <button type="button" data-ng-click="CommentNewViewModel.create()">Add Comment</button>
+</form> -->
+
+<p>Comments:</p>
+<!-- ng repeat needed to loop through comments -->
+<!-- <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+  <p> {{comment.name}}: {{comment.message}}</p>
+</div> -->
