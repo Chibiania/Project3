@@ -1,6 +1,14 @@
-<div data-ng-repeat="snack in SnackIndexVM.snacks">
-  <div id="countries-holder">
-  </div>
+
+<header>
+  <h3>SEARCH
+  <input type="text" class="form-control" placeholder="search snacks" id="search-box"data-ng-model="search">
+  </h3>
+</header>
+<div id="countries-holder">
+  countries go here...
+</div>
+
+<div data-ng-repeat="snack in SnackIndexVM.snacks | filter: search">
   <div>
     <h2><a href="#">{{snack.name}}</a></h2>
     <h4>{{snack.country}}</h4>
