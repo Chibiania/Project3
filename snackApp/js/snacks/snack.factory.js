@@ -3,13 +3,11 @@
 
   angular
   .module('snacks')
-  .factory('factory', [
+  .factory('SnackFactory', [
     "$resource",
     SnackFactoryFunction
   ]);
   function SnackFactoryFunction($resource){
-    return $resource("http://localhost:3000/snacks/:id", {}, {
-      update: {method: "PUT"}
-    });
+    return $resource("http://localhost:3000/snacks/:id");
   }
 })();

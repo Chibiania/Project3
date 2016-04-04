@@ -7,16 +7,18 @@
     "snacks"
   ])
   .config([
-    "stateProvider",
+    "$stateProvider",
     RouteFunction
   ]);
 
   function RouteFunction($stateProvider){
     $stateProvider
-    .state("main"), {
-      url: "",
-      templater: "Welcome to the Snack App"
-    };
+    .state("main", {
+      url: "/snacks",
+      templateUrl: "js/snacks/index.html",
+      controller: 'IndexController',
+      controllerAs:'SnackIndexVM'
+    });
   }
 
 
