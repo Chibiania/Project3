@@ -1,0 +1,6 @@
+<div data-ng-repeat="snack in SnackIndexVM | orderBy:'-created_at'">
+  <div>
+    <h2>{{snack.name}}</h2>
+    <h4>{{snack.country}}</h4>
+  </div>
+</div>
