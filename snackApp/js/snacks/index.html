@@ -1,19 +1,20 @@
 
 
-<div id="countries-holder" data-ng-controller="IndexController as vm">
+<section data-ng-controller="IndexController as vm">
   <header>
     <h3>SEARCH
     <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
-<h1>Filter By:</h1>
-<h2>COUNTRY:</h2>
-  <div data-ng-repeat="country in vm.countriesFound">
-    <a class="country-linkshs" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
-  </div>
-  <h2>TASTE:</h2>
+<!-- <h1>Filter By:</h1>
+<h2>COUNTRY:</h2> -->
+<a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
+<div id="countries-holder" data-ng-repeat="country in vm.countriesFound">
+    <a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
+</div>
+  <!-- <h2>TASTE:</h2>
   <h2>MOOD:</h2>
-  <h2>NUTRITION LEVEL:</h2>
+  <h2>NUTRITION LEVEL:</h2> -->
 
 <h1>SNACKS</h1>
   <div data-ng-repeat="snack in vm.snacks | filter: search | filter: vm.countryCategory">
@@ -23,4 +24,4 @@
     </div>
   </div>
 
-</div>
+</section>
