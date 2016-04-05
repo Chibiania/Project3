@@ -19,12 +19,17 @@
     "$resource",
     SnackFactoryFunction
   ])
+  .factory("CommentFactory", [
+    "$resource",
+    CommentFactoryFunction
+  ])
   .controller("IndexController", [
     "SnackFactory",
     IndexControllerFunction
   ])
   .controller("ShowController", [
     "SnackFactory",
+    "CommentFactory",
     "$stateParams",
     ShowControllerFunction
   ]);
@@ -47,22 +52,17 @@
 
   // SnackFactoryFunction
   function SnackFactoryFunction($resource){
-    // Robin's version
     var Snack = $resource("/snacks/:id.json", {}, {
       update: {method: "PUT"}
     });
     Snack.all = Snack.query();
     return Snack;
   }
-  // more Robin's version
-  // function indexCtrlFunction(Snack){
-  //   var indexVM = this;
-  //   indexVM.destinations = Snack.all;
-  // }
 
-  //original factory code
-  // return $resource("http://localhost:3000/snacks/:id.json");
-  // };
+  //CommentFactoryFunction
+  function CommentFactoryFunction($resource){
+
+  }
 
   //IndexControllerFunction
   function IndexControllerFunction(Snack) {
@@ -94,6 +94,7 @@
 
   function ShowControllerFunction(SnackFactory, $stateParams){
     this.snack = SnackFactory.get({id: $stateParams.id});
+    CommentFactory.query({snack_id: $stateParams.snackId})
   }
 
 

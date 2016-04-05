@@ -17,14 +17,14 @@
 <!-- need a comments controller? -->
 <!-- how to incorporate comments into here? -->
 <!-- we need a form for comments...don't know if this is right -->
-<!-- <form>
-  <input placeholder="Name" data-ng-model="CommentNewVM.comment.name"/>
-  <input placeholder="Message" data-ng-model="CommentNewVM.comment.message"/>
-  <button type="button" data-ng-click="CommentNewVM.create()">Add Comment</button>
-</form> -->
+<form>
+  <input placeholder="Name" data-ng-model="SnackShowVM.comment.name"/>
+  <input placeholder="Message" data-ng-model="SnackShowVM.comment.message"/>
+  <button type="button" data-ng-click="SnackShowVM.create()">Add Comment</button>
+</form>
 
 <p>Comments:</p>
 <!-- ng repeat needed to loop through comments -->
-<!-- <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+<div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
   <p> {{comment.name}}: {{comment.message}}</p>
-</div> -->
+</div>
