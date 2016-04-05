@@ -4,10 +4,9 @@
     <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
-<!-- <h1>Filter By:</h1>
-<h2>COUNTRY:</h2> -->
+<h2>Filter By Country:</h2>
 <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
-<div id="countries-holder" data-ng-repeat="country in vm.countriesFound">
+<div class="country-categories" data-ng-repeat="country in vm.countriesFound">
     <a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
 </div>
   <!-- <h2>TASTE:</h2>
