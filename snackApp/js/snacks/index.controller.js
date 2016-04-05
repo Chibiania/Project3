@@ -1,9 +1,9 @@
-'use strict';
+
 
 
 
 (function() {
-<<<<<<< HEAD
+
     'use strict';
 
     angular
@@ -29,20 +29,11 @@
             }
         });
       });
-        console.log(vm.countriesFound);
+      vm.countrySearch = function(criteria){
+        vm.countryCategory = criteria
+        console.log('country clicked: ' + vm.countryCategory);
     };
-=======
 
-  angular
-  .module('snacks')
-  .controller('IndexController', [
-    "SnackFactory",
-    IndexControllerFunction
-  ]);
-
-  function IndexControllerFunction(SnackFactory) {
-    this.snacks = SnackFactory.query();
-    
   }
->>>>>>> directive
+
 })();
