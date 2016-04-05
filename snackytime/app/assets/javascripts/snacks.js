@@ -88,8 +88,13 @@
   }
 
   function ShowControllerFunction(SnackFactory, $stateParams){
+    var vm = this;
     this.snack = SnackFactory.get({id: $stateParams.id});
-  }
 
+    this.editSnack = function(){
+      vm.snack.$save();
+      this.toggleForm = !this.toggleForm
+  }
+}
 
 })();
