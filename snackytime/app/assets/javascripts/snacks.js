@@ -19,17 +19,12 @@
     "$resource",
     SnackFactoryFunction
   ])
-  .factory("CommentFactory", [
-    "$resource",
-    CommentFactoryFunction
-  ])
   .controller("IndexController", [
     "SnackFactory",
     IndexControllerFunction
   ])
   .controller("ShowController", [
     "SnackFactory",
-    "CommentFactory",
     "$stateParams",
     ShowControllerFunction
   ]);
@@ -94,7 +89,6 @@
 
   function ShowControllerFunction(SnackFactory, $stateParams){
     this.snack = SnackFactory.get({id: $stateParams.id});
-    CommentFactory.query({snack_id: $stateParams.snackId})
   }
 
 
