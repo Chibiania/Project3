@@ -19,12 +19,17 @@
     "$resource",
     SnackFactoryFunction
   ])
+  .factory("CommentFactory", [
+    "$resource",
+    CommentFactoryFunction
+  ])
   .controller("IndexController", [
     "SnackFactory",
     IndexControllerFunction
   ])
   .controller("ShowController", [
     "SnackFactory",
+    "CommentFactory",
     "$stateParams",
     ShowControllerFunction
   ]);
@@ -32,7 +37,7 @@
   function RouteFunction($stateProvider){
     $stateProvider
     .state("index", {
-      url: "/",
+      url: "",
       templateUrl: "ng-views/snack.index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
@@ -56,7 +61,7 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-
+    return $resource("/snacks/:id.json");
   }
 
   //IndexControllerFunction
@@ -86,7 +91,8 @@
 
     console.log(vm.countriesFound);
   }
-  
+
+
   function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
     vm.snack = SnackFactory.get({id: $stateParams.id});
@@ -102,13 +108,13 @@
       //
       // console.log(test);
     };
-  }
 
-  // edit function
-  this.editSnack = function(){
-    vm.snack.$save();
-    this.toggleForm = !this.toggleForm
+
+    // edit function
+    this.editSnack = function(){
+      vm.snack.$save();
+      this.toggleForm = !this.toggleForm;
+    };
   }
-}
 
 })();
