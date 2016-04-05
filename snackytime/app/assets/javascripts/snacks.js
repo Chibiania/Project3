@@ -98,15 +98,13 @@
 
     CommentFactory.query({snack_id: $stateParams.snack_id});
     vm.comment = new CommentFactory();
-    vm.comment.snack_id = 32;
+    vm.comment.snack_id = vm.snack;
     this.create = function(){
       vm.comment.$save();
-      // .save(vm.comment, function(test){
-      //   // setup with snacks db (gets added to the end of the db)...does comments need its own db?
-      //   // is save as a new snack but needs to be saved as a comment with comment attributes
-      //
-      //   console.log(test);
-      // });
+        // setup with snacks db (gets added to the end of the db)...does comments need its own db?
+        // is save as a new snack but needs to be saved as a comment with comment attributes
+        //
+        // console.log(test);
     };
   }
 
