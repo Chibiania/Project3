@@ -22,15 +22,26 @@
   .controller("IndexController", [
     "SnackFactory",
     IndexControllerFunction
+  ])
+  .controller("ShowController", [
+    "SnackFactory",
+    "$stateParams",
+    ShowControllerFunction
   ]);
 
   function RouteFunction($stateProvider){
     $stateProvider
     .state("index", {
-      url: "/snacks",
+      url: "/",
       templateUrl: "ng-views/snack.index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
+    })
+    .state("show", {
+      url: "/:id",
+      templateUrl: "ng-views/snack.show.html",
+      controller: "ShowController",
+      controllerAs: "SnackShowVM"
     });
   }
 
@@ -73,10 +84,17 @@
         }
       });
     });
+    vm.countrySearch = function(criteria){
+      vm.countryCategory = criteria
+      console.log('country clicked: ' + vm.countryCategory);
+    };
+
     console.log(vm.countriesFound);
   }
 
-
+  function ShowControllerFunction(SnackFactory, $stateParams){
+    this.snack = SnackFactory.get({id: $stateParams.id});
+  }
 
 
 })();

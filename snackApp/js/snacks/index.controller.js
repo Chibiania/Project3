@@ -24,6 +24,9 @@
             }
         });
       });
-        console.log(vm.countriesFound);
+      vm.countrySearch = function(criteria){
+        vm.countryCategory = criteria
+        console.log('country clicked: ' + vm.countryCategory);
     };
+  }
 })();

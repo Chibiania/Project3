@@ -1,0 +1,30 @@
+<h2>{{SnackShowVM.snack.name}}</h2>
+
+<img data-ng-src="{{SnackShowVM.snack.image_url}}" src="#" alt="SnackShowVMsnack.name" />
+
+<!-- <p>{{SnackShowVM.snack.like}}</p> -->
+<!-- <video data-ng-src="{{SnackShowVM.snack.video_url}}" ></video> -->
+
+<p>{{SnackShowVM.snack.country}}</p>
+<p>{{SnackShowVM.snack.description}}</p>
+
+<p>Good for</p>
+<p>Mood: {{SnackShowVM.snack.mood}}, Taste: {{SnackShowVM.snack.taste}}, Nutrition Level: {{SnackShowVM.snack.nutrition_level}}</p>
+
+<p><a href="{{SnackShowVM.snack.seller_url}}">Buyer Info </a> </p>
+
+<p>Add Comment:</p>
+<!-- need a comments controller? -->
+<!-- how to incorporate comments into here? -->
+<!-- we need a form for comments...don't know if this is right -->
+<!-- <form>
+  <input placeholder="Name" data-ng-model="CommentNewVM.comment.name"/>
+  <input placeholder="Message" data-ng-model="CommentNewVM.comment.message"/>
+  <button type="button" data-ng-click="CommentNewVM.create()">Add Comment</button>
+</form> -->
+
+<p>Comments:</p>
+<!-- ng repeat needed to loop through comments -->
+<!-- <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+  <p> {{comment.name}}: {{comment.message}}</p>
+</div> -->
