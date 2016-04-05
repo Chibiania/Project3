@@ -1,14 +1,18 @@
-<h2>Here are all the sncaks</h2>
-
-<div data-snack-form data-snack="SnackIndexViewModel.newSnack"></div>
-
 <form>
-
     <input placeholder="Name" data-ng-model="snack.title" />
+    <input placeholder="Image" data-ng-model="snack.image_url" />
     <input placeholder="Country" data-ng-model="snack.country" />
     <textarea placeholder="Description" data-ng-model="snack.description" />
+    <input placeholder="Mood" data-ng-model="snack.mood" />
+    <input placeholder="taste" data-ng-model="snack.taste" />
+    <input placeholder="Nutrition_level" data-ng-model="snack.nutrition_level" />
+    <input placeholder="Seller_url" data-ng-model="snack.seller_url" />
 
-  <div data-ng-if="snack.id">
+
+
+
+  <button type="button" data-ng-if="!snack.id" data-ng-click="create()">Create</button>
+    <div data-ng-if="snack.id">
     <button type="button" data-ng-click="update()">Update</button>
     <button type="button" data-ng-click="delete()">Delete</button>
   </div>
