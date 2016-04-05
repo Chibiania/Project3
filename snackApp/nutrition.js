@@ -1,4 +1,4 @@
-[
+var data = [
     {
         "country": "Thailand",
         "name": "Glico Pocky Chocolate",
@@ -6,7 +6,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p700_i10_w500.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Glico-Pocky-Chocolate/dp/B0002XVF4A/ref=sr_1_1_a_it?ie=UTF8&qid=1459589225&sr=8-1&keywords=Glico+Pocky+Chocolate",
         "video_url": null
     },
@@ -17,7 +17,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p699_i9_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Glico-Strawberry-Pocky-1-41-Oz/dp/B00023T3DA/ref=sr_1_2_a_it?ie=UTF8&qid=1459589245&sr=8-2&keywords=Glico+Pocky+Strawberry",
         "video_url": null
     },
@@ -28,7 +28,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p567_i1_w350.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/United-Coffee-Candy-4-41-Pack/dp/B00G42HQZU/ref=sr_1_1_a_it?ie=UTF8&qid=1459589265&sr=8-1&keywords=United+Coffee+Candy",
         "video_url": null
     },
@@ -39,7 +39,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p593_i5_w522.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Euro-Strawberry-Cake-144-G/dp/B007Z0FCJM/ref=sr_1_1?ie=UTF8&qid=1459589308&sr=8-1&keywords=Euro+Strawberry+Cake",
         "video_url": null
     },
@@ -50,7 +50,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p555_i4_w546.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Euro-Sweet-Custard-Cream-144g/dp/B008W2TLIA/ref=sr_1_1_a_it?ie=UTF8&qid=1459589391&sr=8-1&keywords=Euro+Custard+Cake",
         "video_url": null
     },
@@ -61,7 +61,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p564_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Euro-Pandan-Cake-Packs-Inside/dp/B00DXJDQTC/ref=sr_1_1?ie=UTF8&qid=1459589408&sr=8-1&keywords=Euro+Pandan+Cake",
         "video_url": null
     },
@@ -72,7 +72,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p565_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Tao-Kae-Noi-Grilled-Thailand/dp/B00IOCISA0/ref=sr_1_fkmr0_1_a_it?ie=UTF8&qid=1459589434&sr=8-1-fkmr0&keywords=Tao+Kae+Noi+Super+Crisp+Seaweed+Kimchi",
         "video_url": null
     },
@@ -83,7 +83,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p565_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Tao-Seaweed-Wasabi-Flavor-Packs/dp/B004NJDWVI/ref=sr_1_1_a_it?ie=UTF8&qid=1459589463&sr=8-1&keywords=Tao+Kae+Noi+Seaweed+Wasabi",
         "video_url": null
     },
@@ -94,7 +94,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p658_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Hi-Tempura-Seaweed-Spicy-Flavor/dp/B00F8MWQG6/ref=sr_1_1_a_it?ie=UTF8&qid=1459589488&sr=8-1&keywords=Tao+Kae+Noi+Tempura+Seaweed+Spicy",
         "video_url": null
     },
@@ -105,7 +105,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p592_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Tao-Kae-Noi-Seaweed-Thailand/dp/B00A8SBR5Q/ref=sr_1_1_a_it?ie=UTF8&qid=1459589512&sr=8-1&keywords=Tao+Kae+Noi+Tom+Yum+Goong",
         "video_url": null
     },
@@ -116,7 +116,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p726_i8_w473.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Tao-Kae-Noi-Grilled-Thailand/dp/B00IOCISA0/ref=sr_1_1_a_it?ie=UTF8&qid=1459589535&sr=8-1&keywords=Tao+Kae+Noi+Super+Crisp+Hot+Chili+Squid",
         "video_url": null
     },
@@ -127,7 +127,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p553_i3_w564.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.amazon.com/Hapi-Hot-Wasabi-Peas-Ounce/dp/B00PUCH4UW/ref=sr_1_2_a_it?ie=UTF8&qid=1459589567&sr=8-2&keywords=Hapi+Hot+Wasabi+Peas",
         "video_url": null
     },
@@ -138,7 +138,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p554_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p554/Hapi_Spicy_Sriracha_Peas.html",
         "video_url": null
     },
@@ -149,7 +149,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p569_i9_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p569/Queens_Diamond_Banana_Chips.html",
         "video_url": null
     },
@@ -160,7 +160,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p570_i10_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p570/Queens_Diamond_Sweet_Potato_Chips.html",
         "video_url": null
     },
@@ -171,7 +171,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p571_i11_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p571/Queens_Diamond_Taro_Chips.html",
         "video_url": null
     },
@@ -182,7 +182,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p561_i7_w602.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p561/Mama_Oriental_Style_Shrimp.html",
         "video_url": null
     },
@@ -193,7 +193,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p559_i5_w567.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p559/Mama_Oriental_Style_Vegetable.html",
         "video_url": null
     },
@@ -204,7 +204,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p558_i4_w480.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p558/Mama_Shrimp_Creamy_Tom_Yum.html",
         "video_url": null
     },
@@ -215,7 +215,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p560_i6_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p560/Mama_Oriental_Style_Pork.html",
         "video_url": null
     },
@@ -226,7 +226,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p562_i8_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p562/Mama_Oriental_Style_Pa-Lo_Duck.html",
         "video_url": null
     },
@@ -237,7 +237,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p572_i5_w517.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p572/Bin_Bin_Rice_Crackers_Coconut_Milk.html",
         "video_url": null
     },
@@ -248,7 +248,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p595_i3_w550.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p595/Amira_Tamarind_Candy.html",
         "video_url": null
     },
@@ -259,7 +259,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p671_i4_w550.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p671/Amira_Lemon_Candy.html",
         "video_url": null
     },
@@ -270,7 +270,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p552_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p552/Lotus_Stick_Biscuit.html",
         "video_url": null
     },
@@ -281,7 +281,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p661_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p661/Asian_Best_Hot_Tamarind_Candy.html",
         "video_url": null
     },
@@ -292,7 +292,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p239_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p239/Asian_Best_Tamarind_Candy.html",
         "video_url": null
     },
@@ -303,18 +303,18 @@
         "image_url": "http: //www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p721_i6_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p721/Hanami_Prawn_Crackers.html",
         "video_url": null
     },
     {
         "country": "Thailand",
         "name": "Bento Squid Seafood Original",
-        "description": "Dried Squid & Surimi",
+        "description": "Dried Squid & Surimi",
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p722_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p722/Bento_Squid_Seafood_Original.html",
         "video_url": null
     },
@@ -325,7 +325,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p573_i6_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p573/Bin_Bin_Rice_Crackers_Original.html",
         "video_url": null
     },
@@ -336,7 +336,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p657_i5_w536.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p657/Hanami_Prawn_Crackers_Hot_Chilli.html",
         "video_url": null
     },
@@ -347,7 +347,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p568_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p568/Amira_Makam_Candy.html",
         "video_url": null
     },
@@ -358,7 +358,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p563_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p563/Tao_Kae_Noi_Tempura_Seaweed_Original.html",
         "video_url": null
     },
@@ -369,7 +369,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p557_i1_w637.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p557/Mama_Moo_Nam_Tok_Spicy_Pork.html",
         "video_url": null
     },
@@ -380,7 +380,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p566_i7_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p566/Tao_Kae_Noi_Seaweed_Hot_and_Spicy.html",
         "video_url": null
     },
@@ -391,7 +391,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p591_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p591/Tao_Kae_Noi_Crispy_Seaweed_Original.html",
         "video_url": null
     },
@@ -402,7 +402,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p602_i7_w354.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p602/Euro_Cappuccino_Cake.html",
         "video_url": null
     },
@@ -413,7 +413,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p319_i1_w549.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p319/Nongshim_Tako_Chips.html",
         "video_url": null
     },
@@ -424,7 +424,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p316_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p316/Nongshim_Banana_Kick.html",
         "video_url": null
     },
@@ -435,7 +435,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p313_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p313/Nongshim_Honey_Twist.html",
         "video_url": null
     },
@@ -446,7 +446,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p317_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p317/Nongshim_Potato_Snack.html",
         "video_url": null
     },
@@ -457,7 +457,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p318_i2_w466.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p318/Paldo_Crab_Chips.html",
         "video_url": null
     },
@@ -468,7 +468,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p175_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p175/Fritos_Chorizo_Chipotle.html",
         "video_url": null
     },
@@ -479,7 +479,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p340_i5_w406.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p340/Cheetos_Horneados_Bolitas.html",
         "video_url": null
     },
@@ -490,7 +490,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p474_i3_w539.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p474/Barcel_Churritos.html",
         "video_url": null
     },
@@ -501,7 +501,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p230_i5_w610.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p230/Takis_Crunchy_Fajita.html",
         "video_url": null
     },
@@ -512,7 +512,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p183_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p184/Totis_Donitas_Chili_and_Lime.html",
         "video_url": null
     },
@@ -523,7 +523,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p360_i2_w500.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p360/Oishi_Prawn_Crackers_Spicy.html",
         "video_url": null
     },
@@ -534,7 +534,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p482_i6_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p482/Boy_Bawang_Cornick_Bar-B-Q.html",
         "video_url": null
     },
@@ -545,7 +545,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p458_i4_w500.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p458/Nagaraya_Original_Cracker_Nuts.html",
         "video_url": null
     },
@@ -556,7 +556,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p732_i5_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p732/Philippine_Brand_Dried_Guava_Balls.html",
         "video_url": null
     },
@@ -567,7 +567,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p242_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p242/Maxx_Honey_Mansi_Candy.html",
         "video_url": null
     },
@@ -578,7 +578,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p443_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p443/Philippine_Brand_Dried_Green_Mangoes.html",
         "video_url": null
     },
@@ -589,7 +589,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p714_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p714/Walkers_Pickled_Onion_Crisps.html",
         "video_url": null
     },
@@ -600,7 +600,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p17_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p17/Mega_Monster_Munch_Flamin_Hot.html",
         "video_url": null
     },
@@ -611,7 +611,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p152_i1_w561.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p152/Taveners_Wine_Gums.html",
         "video_url": null
     },
@@ -622,7 +622,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p631_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p631/Cadbury_Flake_Milk_Chocolate.html",
         "video_url": null
     },
@@ -633,18 +633,18 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p193_i1_w618.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p193/Cadbury_Timeout.html",
         "video_url": null
     },
     {
         "country": "United Kingdom",
         "name": "British Mars Bar",
-        "description": "Chocolate Bar(s) ",
+        "description": "Chocolate Bar(s) ",
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p29_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p29/British_Mars_Bar.html",
         "video_url": null
     },
@@ -655,7 +655,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p718_i4_w600.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p718/Japanese_Sake_Kit_Kat.html",
         "video_url": null
     },
@@ -666,7 +666,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p738_i17_w381.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p738/Calbee_Pizza_Chips.html",
         "video_url": null
     },
@@ -677,7 +677,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p736_i16_w505.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p736/Subway_Shrimp_Avocado_Chips.html",
         "video_url": null
     },
@@ -688,7 +688,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p594_i6_w456.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p594/Meiji_Karl_Cheese_Puffs.html",
         "video_url": null
     },
@@ -699,7 +699,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p447_i15_w425.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p447/Yamayoshi_Hot_Wasabi_Beef_Potato_Chips.html",
         "video_url": null
     },
@@ -710,7 +710,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p349_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p349/Amanoya_Rice_Crackers_Himemaru.html",
         "video_url": null
     },
@@ -721,7 +721,7 @@
         "image_url": "http: //www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p421_i5_w573.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p421/Pocky_Almond_Crush_3_Pack.html",
         "video_url": null
     },
@@ -732,7 +732,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p121_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p121/Kinder_Bueno.html",
         "video_url": null
     },
@@ -743,7 +743,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p146_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p146/Milka_Oreo.html",
         "video_url": null
     },
@@ -754,7 +754,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p118_i1_w624.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p118/Haribo_Licorice_Wheels.html",
         "video_url": null
     },
@@ -765,7 +765,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p520_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p520/Haribo_Alphabet_Letters.html",
         "video_url": null
     },
@@ -776,7 +776,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p336_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p336/Katjes_Salzige_Heringe_-_Salty_Herring.html",
         "video_url": null
     },
@@ -787,7 +787,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p126_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p126/Storck_Toffifay-_Toffifee.html",
         "video_url": null
     },
@@ -798,7 +798,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p130_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 3,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p130/Hans_Freitag_Desiree_Wafers.html",
         "video_url": null
     },
@@ -809,7 +809,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p135_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 5,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p135/Bahlsen_Choco_Leibniz_Milk.html",
         "video_url": null
     },
@@ -820,7 +820,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p680_i9_w441.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p680/Ma%C3%AEtre_Truffout_Pralines_Hazelnut.html",
         "video_url": null
     },
@@ -831,7 +831,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p292_i5_w460.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p292/Balconi_Trancetto_Apricot.html",
         "video_url": null
     },
@@ -842,7 +842,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p653_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p653/Perugina_Baci_White_Chocolate.html",
         "video_url": null
     },
@@ -853,7 +853,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p582_i9_w336.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p582/Balconi_Rollino_Cocoa.html",
         "video_url": null
     },
@@ -864,7 +864,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p448_i9_w408.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p448/Biscolata_Mood.html",
         "video_url": null
     },
@@ -875,7 +875,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p632_i11_w400.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p632/Eti_Cikolata_Milk_Chocolate_Pistachio.html",
         "video_url": null
     },
@@ -886,7 +886,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p636_i12_w430.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p636/Ulker_Cikolata_Findikli.html",
         "video_url": null
     },
@@ -897,7 +897,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p393_i7_w622.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/c45/Turkish_Snacks.html",
         "video_url": null
     },
@@ -908,7 +908,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p711_i3_w477.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p711/ETi_Sesame_Sticks.html",
         "video_url": null
     },
@@ -919,7 +919,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p716_i13_w428.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p716/ETi_Topkek_Fruity_Muffin.html",
         "video_url": null
     },
@@ -930,7 +930,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p508_i9_w582.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p508/Roshen_Kara-Kum.html",
         "video_url": null
     },
@@ -941,7 +941,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p589_i8_w600.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p589/Roshen_Chamomile.html",
         "video_url": null
     },
@@ -952,7 +952,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p514_i14_w621.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p514/Montblanc_w%2F_Chocolate_%26_Sesame.html",
         "video_url": null
     },
@@ -963,7 +963,7 @@
         "image_url": "",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p515/Roshen_Gazirovka.html",
         "video_url": null
     },
@@ -974,7 +974,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p507_i8_w611.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p507/Roshen_Dessert_Fresh.html",
         "video_url": null
     },
@@ -985,7 +985,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p84_i1_w560.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p84/Oreo_Cookies.html",
         "video_url": null
     },
@@ -996,7 +996,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p60_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p60/Snickers_Bar.html",
         "video_url": null
     },
@@ -1007,7 +1007,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p59_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 1,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p59/Hershey_Kit_Kat.html",
         "video_url": null
     },
@@ -1018,7 +1018,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p63_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 4,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p63/Twix_Bars.html",
         "video_url": null
     },
@@ -1029,7 +1029,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p70_i2_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 7,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p70/Original_Flavor_Skittles.html",
         "video_url": null
     },
@@ -1040,7 +1040,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p90_i1_w560.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 9,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p90/Nacho_Cheese_Doritos.html",
         "video_url": null
     },
@@ -1051,7 +1051,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p102_i1_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 10,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p102/M%26Ms_Milk_Chocolate_48_Count.html",
         "video_url": null
     },
@@ -1062,7 +1062,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p629_i3_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 8,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p629_i3_w640.jpeg",
         "video_url": null
     },
@@ -1073,7 +1073,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p644_i10_w450.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 2,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p644/Candyland_Chili_Mili.html",
         "video_url": null
     },
@@ -1084,7 +1084,7 @@
         "image_url": "http://www.worldofsnacks.com/uploads/1/3/1/2/13127180/s643667121527569464_p646_i4_w640.jpeg",
         "mood": null,
         "taste": null,
-        "nutrition_level": 6,
+        "nutrition_level": null,
         "seller_url": "http://www.worldofsnacks.com/store/p646/United_King_Namkino_Nimco_Mix.html",
         "video_url": null
     }
