@@ -47,7 +47,7 @@
 
   // SnackFactoryFunction
   function SnackFactoryFunction($resource){
-    var Snack = $resource("/snacks/:id.json", {}, {
+    var Snack = $resource("http://localhost:3000/snacks/:id.json", {}, {
       update: {method: "PUT"}
     });
     Snack.all = Snack.query();
@@ -90,10 +90,9 @@
   function ShowControllerFunction(SnackFactory, $stateParams){
     var vm = this;
     this.snack = SnackFactory.get({id: $stateParams.id});
-
-    this.editSnack = function(){
-      vm.snack.$save();
-      this.toggleForm = !this.toggleForm
+    // this.editSnack = function(){
+    //   vm.snack.$save();
+    //   this.toggleForm = !this.toggleForm
   }
 }
 
