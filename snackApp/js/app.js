@@ -18,11 +18,15 @@
       templateUrl: "js/snacks/index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
+    })
+    .state("snackShow", {
+      url: "/snacks/:id",
+      templateUrl: "js/snacks/show.html",
+      controller: "SnackShowController",
+      controllerAs: "SnackShowViewModel"
     });
-  }
+
+};
 
 
-
-
-
-})();
+  })();
