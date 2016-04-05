@@ -1,4 +1,9 @@
 class CommentsController < ApplicationController
+  before_action do
+    if params[:id]
+      @destination = Destination.find(params[:id])
+    end
+  end
   def index
     @snack = Snack.find(params[:snack_id])
     @comments = @snack.comments
