@@ -86,14 +86,28 @@
 
     console.log(vm.countriesFound);
   }
-
-  function ShowControllerFunction(SnackFactory, $stateParams){
+  
+  function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
-    this.snack = SnackFactory.get({id: $stateParams.id});
+    vm.snack = SnackFactory.get({id: $stateParams.id});
 
-    this.editSnack = function(){
-      vm.snack.$save();
-      this.toggleForm = !this.toggleForm
+    // comment function
+    CommentFactory.query({snack_id: $stateParams.snack_id});
+    vm.comment = new CommentFactory();
+    vm.comment.snack_id = vm.snack;
+    this.create = function(){
+      vm.comment.$save();
+      // setup with snacks db (gets added to the end of the db)...does comments need its own db?
+      // is save as a new snack but needs to be saved as a comment with comment attributes
+      //
+      // console.log(test);
+    };
+  }
+
+  // edit function
+  this.editSnack = function(){
+    vm.snack.$save();
+    this.toggleForm = !this.toggleForm
   }
 }
 
