@@ -22,7 +22,10 @@
 <h1>SNACKS</h1>
   <div data-ng-repeat="snack in vm.snacks | filter: search | filter: vm.countryCategory">
     <div>
+
       <h2><a data-ui-sref="snackShow({id: snack.id})">{{snack.name}}</a></h2>
+
+
       <h4>{{snack.country}}</h4>
     </div>
   </div>
