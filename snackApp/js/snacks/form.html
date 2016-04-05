@@ -1,0 +1,15 @@
+<h2>Here are all the sncaks</h2>
+
+<div data-snack-form data-snack="SnackIndexViewModel.newSnack"></div>
+
+<form>
+
+    <input placeholder="Name" data-ng-model="snack.title" />
+    <input placeholder="Country" data-ng-model="snack.country" />
+    <textarea placeholder="Description" data-ng-model="snack.description" />
+
+  <div data-ng-if="snack.id">
+    <button type="button" data-ng-click="update()">Update</button>
+    <button type="button" data-ng-click="delete()">Delete</button>
+  </div>
+</form>
