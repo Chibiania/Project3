@@ -1,30 +1,28 @@
-<h2>{{SnackShowViewModel.snack.name}}</h2>
+<h2>{{SnackShowVM.snack.name}}</h2>
 
-<img data-ng-src="{{SnackShowViewModel.snack.image_url}}" src="#" alt="SnackShowViewModel.snack.name" />
+<img data-ng-src="{{SnackShowVM.snack.image_url}}" src="#" alt="SnackShowVM.snack.name" />
 
 <!-- <p>{{SnackShowViewModel.snack.like}}</p> -->
 <!-- <video data-ng-src="{{SnackShowViewModel.snack.video_url}}" ></video> -->
 
-<p>{{SnackShowViewModel.snack.country}}</p>
-<p>{{SnackShowViewModel.snack.description}}</p>
+<p>{{SnackShowVM.snack.country}}</p>
+<p>{{SnackShowVM.snack.description}}</p>
 
 <p>Good for</p>
-<p>Mood: {{SnackShowViewModel.snack.mood}}, Taste: {{SnackShowViewModel.snack.taste}}, Nutrition Level: {{SnackShowViewModel.snack.nutrition_level}}</p>
+<p>Mood: {{SnackShowVM.snack.mood}}, Taste: {{SnackShowVM.snack.taste}}, Nutrition Level: {{SnackShowVM.snack.nutrition_level}}</p>
 
-<p>Buyer Info: {{SnackShowViewModel.snack.seller_url}}</p>
+<p><a href="{{SnackShowVM.snack.seller_url}}">Buyer Info</a></p>
 
 <p>Add Comment:</p>
-<!-- need a comments controller? -->
-<!-- how to incorporate comments into here? -->
-<!-- we need a form for comments...don't know if this is right -->
-<!-- <form>
-  <input placeholder="Name" data-ng-model="CommentNewViewModel.comment.name"/>
-  <input placeholder="Message" data-ng-model="CommentNewViewModel.comment.message"/>
-  <button type="button" data-ng-click="CommentNewViewModel.create()">Add Comment</button>
-</form> -->
+<form>
+  <input placeholder="Name" data-ng-model="SnackShowVM.comment.name"/>
+  <input placeholder="Message" data-ng-model="SnackShowVM.comment.message"/>
+  <button type="button" data-ng-click="SnackShowVM.create()">Add Comment</button>
+</form>
 
+<!-- doesn't work yet -->
 <p>Comments:</p>
 <!-- ng repeat needed to loop through comments -->
-<!-- <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+<div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'">
   <p> {{comment.name}}: {{comment.message}}</p>
-</div> -->
+</div>
