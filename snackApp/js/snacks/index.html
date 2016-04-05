@@ -1,10 +1,10 @@
 <h2>New Snack</h2>
 
 
-<div data-ng-repeat="snack in SnackIndexVM.snacks">
+<div data-ng-repeat="snack in SnackIndexVM.snacks | filter: search">
   <div>
-    <h4>{{snack.name}}</h4>
+    <h4><a href="#">{{snack.name}}</a></h4>
     <h4>{{snack.country}}</h4>
-    <img data-ng-src="{{snack.image_url}}">
+
   </div>
 </div>
