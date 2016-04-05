@@ -1,4 +1,9 @@
+'use strict';
+
+
+
 (function() {
+<<<<<<< HEAD
     'use strict';
 
     angular
@@ -26,4 +31,18 @@
       });
         console.log(vm.countriesFound);
     };
+=======
+
+  angular
+  .module('snacks')
+  .controller('IndexController', [
+    "SnackFactory",
+    IndexControllerFunction
+  ]);
+
+  function IndexControllerFunction(SnackFactory) {
+    this.snacks = SnackFactory.query();
+    
+  }
+>>>>>>> directive
 })();
