@@ -5,9 +5,11 @@
     </h3>
   </header>
 <h2>Filter By Country:</h2>
-<a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
-<div class="country-categories" data-ng-repeat="country in vm.countriesFound">
-    <a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
+<div id="container countries-holder text-center">
+  <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
+  <div class="country-categories" data-ng-repeat="country in vm.countriesFound">
+      |<a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">&nbsp;{{country}}&nbsp;</a>
+
 </div>
   <!-- <h2>TASTE:</h2>
   <h2>MOOD:</h2>

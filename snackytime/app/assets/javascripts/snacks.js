@@ -81,7 +81,6 @@
     });
     vm.countrySearch = function(criteria){
       vm.countryCategory = criteria
-      console.log('country clicked: ' + vm.countryCategory);
     };
 
     console.log(vm.countriesFound);
@@ -90,7 +89,6 @@
   function ShowControllerFunction(SnackFactory, $stateParams){
     var vm = this;
     this.snack = SnackFactory.get({id: $stateParams.id});
-
     this.editSnack = function(){
       vm.snack.$save();
       this.toggleForm = !this.toggleForm

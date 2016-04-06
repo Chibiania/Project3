@@ -3,5 +3,6 @@
 */
 
 .country-categories {
-  
+  display: inline-block;
+  text-align: center;
 }
