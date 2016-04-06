@@ -61,7 +61,7 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-    return $resource("/snacks/:id.json");
+    return $resource("/snacks/:snack_id/comments/:id.json", {snackId: "@snackId", id: "@id"});
   }
 
   //IndexControllerFunction
