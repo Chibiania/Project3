@@ -1,5 +1,7 @@
+<!-- <<<<<<< HEAD -->
 <div class="col-md-6">
-  <h2>{{SnackShowVM.snack.name}}</h2>
+  <h4><a data-ui-sref="index">HOME / SNACK INDEX</a></h4>
+  <h2>{{SnackShowVM.snack.name}}&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>:{{SnackShowVM.snack.likes}}</h2>
 </div>
 <div class="col-md-6">
   <button data-ng-click="SnackShowVM.editSnack()" type="button" class="showEdit pull-right">Edit Snack</button>
@@ -9,6 +11,15 @@
   <img class="img-responsive" data-ng-src="{{SnackShowVM.snack.image_url}}" alt="{{SnackShowVM.snack.name}}" height="300" width="300"/>
   <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.image_url">
 </div>
+<!-- ======= -->
+<!-- <h4><a data-ui-sref="index">HOME / SNACK INDEX</a></h4> -->
+
+<!-- <h2>{{SnackShowVM.snack.name}}&nbsp;<span class="glyphicon glyphicon-thumbs-up">:{{SnackShowVM.snack.likes}}</h2> -->
+<!-- <button data-ng-click="SnackShowVM.editSnack()" type="button" class="showEdit">Edit Snack</button> -->
+
+<img data-ng-src="{{SnackShowVM.snack.image_url}}" src="#" alt="SnackShowVM.snack.name" />
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.image_url">
+<!-- >>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58 -->
 
 <!-- <p>{{SnackShowVM.snack.like}}</p> -->
 <!-- <video data-ng-src="{{SnackShowVM.snack.video_url}}" ></video> -->

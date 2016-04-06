@@ -1,8 +1,21 @@
+<!-- <<<<<<< HEAD -->
 
+<!-- ======= -->
+<!-- <div id="map-holder">
+  <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+  </div> -->
+<div id="map"></div>
+</div>
+<a data-ui-sref="new"><button type="button">Add New Snack</button></a>
+<!-- >>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58 -->
 <section data-ng-controller="IndexController as vm">
+  <section class="top-header">
   <header>
     <h3>SEARCH
-      <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
+<!-- <<<<<<< HEAD -->
+      <input type="text" class="form-control" placeholder="search snacks" id="address" class="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
 
@@ -10,9 +23,10 @@
   <!-- <h1>Filter By:</h1>
   <h2>COUNTRY:</h2> -->
   <nav class="navbar navbar-default">
+    <h2>Filter By Country</h2>
     <div class="container-fluid">
       <a class="country-links navbar-brand" href="#" data-ng-click="vm.countrySearch('')">All</a>
-      <div class="navbar-header" id="countries-holder" data-ng-repeat="country in vm.countriesFound">
+      <div class="navbar-header" id="countries-holder" data-ng-repeat="country in vm.countriesFound | orderBy: country">
         <a class="navbar-brand" href="#" class="country-links" data-ng-click="vm.countrySearch(country)">{{country}}</a>
       </div>
     </div>
@@ -30,9 +44,29 @@
   <h2>NUTRITION LEVEL:</h2> -->
 
   <h1>SNACKS</h1>
-  <div data-ng-repeat="snack in vm.snacks | filter: search | filter: vm.countryCategory" class="row well">
+  <div data-ng-repeat="snack in vm.snacks | orderBy: '-likes' | filter: vm.countryCategory | filter: search " class="row well">
     <div class="col-md-6 text-center">
-      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a></h2>
+      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a>&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>:{{snack.likes}}</h2>
+<!-- ======= -->
+    <!-- <input type="text" class="form-control" placeholder="search snacks" id="address" class="search-box" data-ng-model="vm.countryCategory">
+    </h3>
+  </header> -->
+  <!-- <h2>Filter By Country:</h2> -->
+  <!-- <div id="container countries-holder text-center"> -->
+    <!-- <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a> -->
+    <!-- <div class="country-categories" data-ng-repeat="country in vm.countriesFound | orderBy: country">
+        |<a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">&nbsp;{{country}}&nbsp;</a>
+    </div> -->
+    <!-- <h2>TASTE:</h2>
+    <h2>MOOD:</h2>
+    <h2>NUTRITION LEVEL:</h2> -->
+
+  <!-- <h1>SNACKS</h1>
+  </section>
+  <div data-ng-repeat="snack in vm.snacks | orderBy: '-likes' | filter: vm.countryCategory | filter: search ">
+    <div>
+      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a>&nbsp;<span class="glyphicon glyphicon-thumbs-up">:{{snack.likes}}</h2> -->
+<!-- >>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58 -->
       <h4>{{snack.country}}</h4>
     </div>
     <div class="col-md-6">
@@ -41,3 +75,6 @@
   </div>
 
 </section>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZxp0qiKTJ205kCk06-bIIgY_UiF-kwDs&callback=initMap">
+</script>
