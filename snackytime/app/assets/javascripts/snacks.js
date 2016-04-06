@@ -43,10 +43,17 @@
       controllerAs:'SnackIndexVM'
     })
     .state("new", {
+<<<<<<< HEAD
       url: "/new",
       templateUrl: "ng-views/snack.new.html",
       controller: "NewController",
       controllerAs: "SnackNewVM"
+=======
+      url:'/new',
+      templateUrl: "ng-views/snack.new.html",
+      controller: 'NewController',
+      ControllerAs: 'SnackNewVM'
+>>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
     })
     .state("show", {
       url: "/:id",
@@ -92,26 +99,40 @@
     });
     vm.countrySearch = function(criteria){
       vm.countryCategory = criteria
-      console.log('country clicked: ' + vm.countryCategory);
     };
 
     console.log(vm.countriesFound);
 
   }
 
+<<<<<<< HEAD
   function NewControllerFunction(SnackFactory,
   $state){
     this.snack = new SnackFactory();
     this.create = function(){
       this.snack.$save( function(response){
         $state.go('index', {}, {reload:true});
+=======
+  function NewControllerFunction(SnackFactory, $state){
+    var vm = this;
+    vm.snack = new SnackFactory();
+    vm.snacks = SnackFactory.all;
+    vm.create = function(){
+      console.log('saving');
+      vm.snack.$save(function(snack){
+        $state.go('show', snack);
+      vm.snacks.push(vm.snack);
+>>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
       });
     }
   }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
   function ShowControllerFunction(SnackFactory, $stateParams){
     var vm = this;
     this.snack = SnackFactory.get({id: $stateParams.id});

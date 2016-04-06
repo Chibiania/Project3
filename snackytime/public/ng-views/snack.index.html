@@ -1,27 +1,36 @@
 
+<!-- <div id="map-holder">
+  <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+  </div> -->
+<div id="map"></div>
+</div>
+<a data-ui-sref="new"><button type="button">Add New Snack</button></a>
+
 <section data-ng-controller="IndexController as vm">
+  <section class="top-header">
   <header>
     <h3>SEARCH
-      <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
+
+    <input type="text" class="form-control" placeholder="search snacks" id="address" class="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
-  <h1>Filter By:</h1>
-  <h2>COUNTRY:</h2>
-  <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
-  <div id="countries-holder" data-ng-repeat="country in vm.countriesFound">
-    <a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
-
-  </div>
-  <!-- <h2>TASTE:</h2>
-  <h2>MOOD:</h2>
-  <h2>NUTRITION LEVEL:</h2> -->
+  <h2>Filter By Country:</h2>
+  <div id="container countries-holder text-center">
+    <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
+    <div class="country-categories" data-ng-repeat="country in vm.countriesFound | orderBy: country">
+        |<a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">&nbsp;{{country}}&nbsp;</a>
+    </div>
+    <!-- <h2>TASTE:</h2>
+    <h2>MOOD:</h2>
+    <h2>NUTRITION LEVEL:</h2> -->
 
   <h1>SNACKS</h1>
-  <div data-ng-repeat="snack in vm.snacks | filter: search | filter: vm.countryCategory">
+  </section>
+  <div data-ng-repeat="snack in vm.snacks | orderBy: '-likes' | filter: vm.countryCategory | filter: search ">
     <div>
-
-      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a></h2>
-
+      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a>&nbsp;<span class="glyphicon glyphicon-thumbs-up">:{{snack.likes}}</h2>
 
       <h4>{{snack.country}}</h4>
     </div>
@@ -30,7 +39,12 @@
 
 
 
+
 <a data-ui-sref="new"><button type="button">Add New Snack</button></a>
 
 
 <!-- <div data-snack-form data-snack="SnackIndexViewModel.newSnack"></div> -->
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZxp0qiKTJ205kCk06-bIIgY_UiF-kwDs&callback=initMap">
+</script>
