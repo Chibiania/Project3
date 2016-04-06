@@ -61,7 +61,7 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-    return $resource("/snacks/:snack_id/comments/:id.json", {snack_id:"@snack_id"}, {
+    return $resource("/snacks/:snack_id/comments/:id", {snack_id:"@snack_id"}, {
       update: {method: "PUT"}
     });
 
@@ -100,8 +100,10 @@
     var vm = this;
     vm.snack = SnackFactory.get({id: $stateParams.id});
 
-    vm.comments = CommentFactory.query();
-    console.log(vm.comments)
+    vm.comments = CommentFactory.query(function(response){
+      console.log(response);
+    });
+    // console.log(vm.comments)
     vm.comment = new CommentFactory({snack_id: $stateParams.id});
     // vm.snack_id = $stateParams.id;
     // vm.comment.snack_id = vm.snack;
@@ -109,7 +111,7 @@
       vm.comment.$save(function(response){
         // console.log("45***************");
         // console.log(response);
-        vm.comments.unshift(response);
+        vm.comments.push(response);
         // vm.comment.name = vm.comment.message = " ";
         // vm.comment.$setPristine();
       });
