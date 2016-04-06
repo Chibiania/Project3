@@ -105,14 +105,7 @@
 
   }
 
-<<<<<<< HEAD
-  function NewControllerFunction(SnackFactory,
-  $state){
-    this.snack = new SnackFactory();
-    this.create = function(){
-      this.snack.$save( function(response){
-        $state.go('index', {}, {reload:true});
-=======
+
   function NewControllerFunction(SnackFactory, $state){
     var vm = this;
     vm.snack = new SnackFactory();
@@ -122,17 +115,12 @@
       vm.snack.$save(function(snack){
         $state.go('show', snack);
       vm.snacks.push(vm.snack);
->>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
+
       });
     }
   }
 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
   function ShowControllerFunction(SnackFactory, $stateParams){
     var vm = this;
     this.snack = SnackFactory.get({id: $stateParams.id});

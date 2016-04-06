@@ -12,21 +12,23 @@
 <!-- <video data-ng-src="{{SnackShowVM.snack.video_url}}" ></video> -->
 
 <p>{{SnackShowVM.snack.country}}</p>
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.country">
 
 <p>{{SnackShowVM.snack.description}}</p>
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.description">
 
-<p>Mood: {{SnackShowVM.snack.mood}}</p>
+<p>Good for</p>
+<p>Mood: {{SnackShowVM.snack.mood}},
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.mood">
 
-<p>Taste: {{SnackShowVM.snack.taste}}</p>
+  Taste: {{SnackShowVM.snack.taste}},
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.taste">
 
-<p>Nutrition Level: {{SnackShowVM.snack.nutrition_level}}</p>
+  Nutrition Level: {{SnackShowVM.snack.nutrition_level}}</p>
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.nutrition_level">
 
 <p><a href="{{SnackShowVM.snack.seller_url}}">Buyer Info </a> </p>
-
-
-<!-- <button data-ng-click="SnackShowVM.editSnack()" type="button" class="showEdit">Edit Snack</button> -->
-<div data-snack-form data-snack="SnackShowVM.snack"></div>
-
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.seller_url">
 
 <p>Add Comment:</p>
 
