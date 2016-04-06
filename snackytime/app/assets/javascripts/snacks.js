@@ -32,6 +32,11 @@
     "SnackFactory",
     "$stateParams",
     ShowControllerFunction
+  ])
+  .directive("snackForm", [
+    "SnackFactory",
+    "$state",
+    SnackFormDirectiveFunction
   ]);
 
   function RouteFunction($stateProvider){
@@ -43,10 +48,12 @@
       controllerAs:'SnackIndexVM'
     })
     .state("new", {
+
       url:'/new',
       templateUrl: "ng-views/snack.new.html",
       controller: 'NewController',
-      ControllerAs: 'SnackNewVM'
+      controllerAs: 'SnackNewVM'
+
     })
     .state("show", {
       url: "/:id",
@@ -58,7 +65,7 @@
 
   // SnackFactoryFunction
   function SnackFactoryFunction($resource){
-    var Snack = $resource("/snacks/:id.json", {}, {
+    var Snack = $resource("http://localhost:3000/snacks/:id.json", {}, {
       update: {method: "PUT"}
     });
     Snack.all = Snack.query();
@@ -95,20 +102,24 @@
     };
 
     console.log(vm.countriesFound);
+
   }
+
 
   function NewControllerFunction(SnackFactory, $state){
     var vm = this;
     vm.snack = new SnackFactory();
-    vm.snacks = SnackFactory.all;
-    vm.create = function(){
-      console.log('saving');
-      vm.snack.$save(function(snack){
-        $state.go('show', snack);
-      vm.snacks.push(vm.snack);
-      });
-    }
+    // vm.snacks = SnackFactory.all;
+    // vm.create = function(){
+    //   console.log('saving');
+    //   vm.snack.$save(function(snack){
+    //     $state.go('show', snack);
+    //   vm.snacks.push(vm.snack);
+    //
+    //   });
+    // }
   }
+
 
   function ShowControllerFunction(SnackFactory, $stateParams){
     var vm = this;
@@ -116,7 +127,33 @@
     this.editSnack = function(){
       vm.snack.$save();
       this.toggleForm = !this.toggleForm
+    }
   }
-}
 
+  function SnackFormDirectiveFunction(SnackFactory, $state){
+    return{
+      templateUrl: "ng-views/snack.form.html",
+      scope: {
+        snack: "="
+      },
+      link: function(scope){
+        scope.create = function(){
+          scope.snack.$save(function(response){
+            $state.go("show", {id: response.id}, {reload: true});
+          });
+        }
+        scope.update = function(){
+          scope.snack.$update({id: scope.snack.id}, function(response){
+            console.log(response);
+          });
+        }
+        scope.delete = function(){
+          scope.snack.$delete({id: scope.snack.id}, function(){
+            SnackFactory.all = SnackFactory.query();
+            $state.go("index", {}, {reload: true});
+          });
+        }
+      }
+    }
+  }
 })();

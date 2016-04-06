@@ -1,0 +1,46 @@
+<h2>{{SnackShowViewModel.snack.name}}</h2>
+<button data-ng-click="SnackShowViewModel.editSnack()" type="button" class="showEdit">Edit Snack</button>
+
+
+
+<img data-ng-src="{{SnackShowViewModel.snack.image_url}}" src="#" alt="SnackShowViewModel.snack.name" />
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.image_url">
+
+<!-- <p>{{SnackShowViewModel.snack.like}}</p> -->
+<!-- <video data-ng-src="{{SnackShowViewModel.snack.video_url}}" ></video> -->
+
+<p>{{SnackShowViewModel.snack.country}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.country">
+
+
+<p>Description: {{SnackShowViewModel.snack.description}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.description">
+
+
+<p>Mood: {{SnackShowViewModel.snack.mood}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.mood">
+
+<p>Taste: {{SnackShowViewModel.snack.taste}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.taste">
+
+<p>Nutrition Level: {{SnackShowViewModel.snack.nutrition_level}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.nutrition_level">
+
+<p>Buyer Info: {{SnackShowViewModel.snack.seller_url}}</p>
+<input ng-show="SnackShowViewModel.toggleForm == true" type="text" ng-model="SnackShowViewModel.snack.seller_url">
+
+<p>Add Comment:</p>
+<!-- need a comments controller? -->
+<!-- how to incorporate comments into here? -->
+<!-- we need a form for comments...don't know if this is right -->
+<!-- <form>
+  <input placeholder="Name" data-ng-model="CommentNewViewModel.comment.name"/>
+  <input placeholder="Message" data-ng-model="CommentNewViewModel.comment.message"/>
+  <button type="button" data-ng-click="CommentNewViewModel.create()">Add Comment</button>
+</form> -->
+
+<p>Comments:</p>
+<!-- ng repeat needed to loop through comments -->
+<!-- <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+  <p> {{comment.name}}: {{comment.message}}</p>
+</div> -->

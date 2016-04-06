@@ -1,5 +1,8 @@
 <div class="col-md-6">
-  <button data-ng-click="SnackShowVM.editSnack()" type="button" class="showEdit pull-right">Edit Snack</button>
+<button data-ng-click="SnackShowVM.doUpdate = true">Update</button>
+
+<div data-ng-if="SnackShowVM.doUpdate" data-snack-form data-snack="SnackShowVM.snack"></div>
+
 </div>
 <div class="col-md-6">
   <h4><a data-ui-sref="index">HOME / SNACK INDEX</a></h4>
@@ -13,8 +16,6 @@
   <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.image_url">
 </div>
 
-<!-- <p>{{SnackShowVM.snack.like}}</p> -->
-<!-- <video data-ng-src="{{SnackShowVM.snack.video_url}}" ></video> -->
 <table class="table">
   <thead>
     <tr  class="info">
@@ -52,10 +53,6 @@
   </table>
   <h5>Click <a href="{{SnackShowVM.snack.seller_url}}"> <strong>here</strong> </a> to buy this delectable treat.</h5>
   <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.seller_url">
-
-
-
-
 
 
   <h5>What others are saying about {{SnackShowVM.snack.name}}</h5>
