@@ -61,7 +61,10 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-    return $resource("/snacks/:id.json");
+
+    // return $resource("/snacks/:snackId/comments/:id.json");
+
+    return $resource("/comments/:id");
   }
 
   //IndexControllerFunction
@@ -92,6 +95,31 @@
     console.log(vm.countriesFound);
   }
 
+  function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
+    var vm = this;
+    vm.snack = SnackFactory.get({id: $stateParams.id});
+
+    vm.comments = CommentFactory.query();
+    console.log(vm.comments)
+    vm.comment = new CommentFactory();
+    vm.snack_id = $stateParams.id;
+    // vm.comment.snack_id = vm.snack;
+    this.create = function(){
+      vm.comment.$save(function(response){
+        console.log("45***************");
+        console.log(response);
+        // vm.comments.unshift(response);
+        // vm.comments.name = vm.comments.message = " ";
+      });
+      // setup with snacks db (gets added to the end of the db)...does comments need its own db?
+      // is save as a new snack but needs to be saved as a comment with comment attributes
+      //
+      console.log(vm.comment);
+      console.log(vm.comment.name);
+      console.log(vm.comment.message);
+      // console.log(vm.comments.length);
+    };
+  }
 
   function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
