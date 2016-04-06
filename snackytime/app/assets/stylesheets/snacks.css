@@ -1,3 +1,30 @@
 /*
 *= require bootstrap
 */
+.country-categories {
+  display: inline-block;
+  text-align: center;
+}
+#map-holder{
+  position: fixed;
+  top: 340px;
+  right: 100px;
+  height: 200px;
+  width: 200px;
+}
+#map {
+  height: 100%;
+  width: auto;
+}
+/*#floating-panel {
+  position: relative;
+  top: 10px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}*/
