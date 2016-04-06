@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 root to: "snacks#index"
+resources :comments
   resources :snacks do
     resources :comments
 end

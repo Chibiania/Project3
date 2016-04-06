@@ -61,7 +61,9 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-    return $resource("/snacks/:snack_id/comments/:id.json", {snackId: "@snackId", id: "@id"});
+    // return $resource("/snacks/:snackId/comments/:id.json");
+
+    return $resource("/comments/:id");
   }
 
   //IndexControllerFunction
@@ -96,15 +98,25 @@
     var vm = this;
     vm.snack = SnackFactory.get({id: $stateParams.id});
 
-    CommentFactory.query({snack_id: $stateParams.snack_id});
+    vm.comments = CommentFactory.query();
+    console.log(vm.comments)
     vm.comment = new CommentFactory();
-    vm.comment.snack_id = vm.snack;
+    vm.snack_id = $stateParams.id;
+    // vm.comment.snack_id = vm.snack;
     this.create = function(){
-      vm.comment.$save();
-        // setup with snacks db (gets added to the end of the db)...does comments need its own db?
-        // is save as a new snack but needs to be saved as a comment with comment attributes
-        //
-        // console.log(test);
+      vm.comment.$save(function(response){
+        console.log("45***************");
+        console.log(response);
+        // vm.comments.unshift(response);
+        // vm.comments.name = vm.comments.message = " ";
+      });
+      // setup with snacks db (gets added to the end of the db)...does comments need its own db?
+      // is save as a new snack but needs to be saved as a comment with comment attributes
+      //
+      console.log(vm.comment);
+      console.log(vm.comment.name);
+      console.log(vm.comment.message);
+      // console.log(vm.comments.length);
     };
   }
 
