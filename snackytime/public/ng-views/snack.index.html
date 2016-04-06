@@ -1,3 +1,4 @@
+
 <!-- <div id="map-holder">
   <div id="floating-panel">
       <input id="address" type="textbox" value="Sydney, NSW">
@@ -6,10 +7,12 @@
 <div id="map"></div>
 </div>
 <a data-ui-sref="new"><button type="button">Add New Snack</button></a>
+
 <section data-ng-controller="IndexController as vm">
   <section class="top-header">
   <header>
     <h3>SEARCH
+
     <input type="text" class="form-control" placeholder="search snacks" id="address" class="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
@@ -28,9 +31,13 @@
   <div data-ng-repeat="snack in vm.snacks | orderBy: '-likes' | filter: vm.countryCategory | filter: search ">
     <div>
       <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a>&nbsp;<span class="glyphicon glyphicon-thumbs-up">:{{snack.likes}}</h2>
+
       <h4>{{snack.country}}</h4>
     </div>
+  </div>
 </section>
+
+
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZxp0qiKTJ205kCk06-bIIgY_UiF-kwDs&callback=initMap">
 </script>
