@@ -61,9 +61,11 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-    // return $resource("/snacks/:snackId/comments/:id.json");
+    return $resource("/snacks/:snack_id/comments/:id.json", {snack_id:"@snack_id"}, {
+      update: {method: "PUT"}
+    });
 
-    return $resource("/comments/:id");
+    // return $resource("/comments/:id");
   }
 
   //IndexControllerFunction
@@ -100,15 +102,16 @@
 
     vm.comments = CommentFactory.query();
     console.log(vm.comments)
-    vm.comment = new CommentFactory();
-    vm.snack_id = $stateParams.id;
+    vm.comment = new CommentFactory({snack_id: $stateParams.id});
+    // vm.snack_id = $stateParams.id;
     // vm.comment.snack_id = vm.snack;
     this.create = function(){
       vm.comment.$save(function(response){
-        console.log("45***************");
-        console.log(response);
-        // vm.comments.unshift(response);
-        // vm.comments.name = vm.comments.message = " ";
+        // console.log("45***************");
+        // console.log(response);
+        vm.comments.unshift(response);
+        // vm.comment.name = vm.comment.message = " ";
+        // vm.comment.$setPristine();
       });
       // setup with snacks db (gets added to the end of the db)...does comments need its own db?
       // is save as a new snack but needs to be saved as a comment with comment attributes
