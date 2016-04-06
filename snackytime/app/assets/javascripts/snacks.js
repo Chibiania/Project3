@@ -32,6 +32,11 @@
     "SnackFactory",
     "$stateParams",
     ShowControllerFunction
+  ])
+  .directive("snackForm", [
+    "SnackFactory",
+    "$state",
+    SnackFormDirectiveFunction
   ]);
 
   function RouteFunction($stateProvider){
@@ -47,7 +52,7 @@
       url:'/new',
       templateUrl: "ng-views/snack.new.html",
       controller: 'NewController',
-      ControllerAs: 'SnackNewVM'
+      controllerAs: 'SnackNewVM'
 
     })
     .state("show", {
@@ -104,15 +109,15 @@
   function NewControllerFunction(SnackFactory, $state){
     var vm = this;
     vm.snack = new SnackFactory();
-    vm.snacks = SnackFactory.all;
-    vm.create = function(){
-      console.log('saving');
-      vm.snack.$save(function(snack){
-        $state.go('show', snack);
-      vm.snacks.push(vm.snack);
-
-      });
-    }
+    // vm.snacks = SnackFactory.all;
+    // vm.create = function(){
+    //   console.log('saving');
+    //   vm.snack.$save(function(snack){
+    //     $state.go('show', snack);
+    //   vm.snacks.push(vm.snack);
+    //
+    //   });
+    // }
   }
 
 
@@ -125,4 +130,30 @@
     }
   }
 
+  function SnackFormDirectiveFunction(SnackFactory, $state){
+    return{
+      templateUrl: "ng-views/snack.form.html",
+      scope: {
+        snack: "="
+      },
+      link: function(scope){
+        scope.create = function(){
+          scope.snack.$save(function(response){
+            $state.go("show", {id: response.id}, {reload: true});
+          });
+        }
+        scope.update = function(){
+          scope.snack.$update({id: scope.snack.id}, function(response){
+            console.log(response);
+          });
+        }
+        scope.delete = function(){
+          scope.snack.$delete({id: scope.snack.id}, function(){
+            SnackFactory.all = SnackFactory.query();
+            $state.go("index", {}, {reload: true});
+          });
+        }
+      }
+    }
+  }
 })();
