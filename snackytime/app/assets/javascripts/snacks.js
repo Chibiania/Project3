@@ -43,17 +43,12 @@
       controllerAs:'SnackIndexVM'
     })
     .state("new", {
-<<<<<<< HEAD
-      url: "/new",
-      templateUrl: "ng-views/snack.new.html",
-      controller: "NewController",
-      controllerAs: "SnackNewVM"
-=======
+
       url:'/new',
       templateUrl: "ng-views/snack.new.html",
       controller: 'NewController',
       ControllerAs: 'SnackNewVM'
->>>>>>> 1d351948d87190f88ee344a240bd4b02e4897c58
+
     })
     .state("show", {
       url: "/:id",
