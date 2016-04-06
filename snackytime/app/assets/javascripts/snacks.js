@@ -23,6 +23,11 @@
     "SnackFactory",
     IndexControllerFunction
   ])
+  .controller("NewController", [
+    "SnackFactory",
+    "$state",
+    NewControllerFunction
+  ])
   .controller("ShowController", [
     "SnackFactory",
     "$stateParams",
@@ -36,6 +41,12 @@
       templateUrl: "ng-views/snack.index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
+    })
+    .state("new", {
+      url:'/new',
+      templateUrl: "ng-views/snack.new.html",
+      controller: 'NewController',
+      ControllerAs: 'SnackNewVM'
     })
     .state("show", {
       url: "/:id",
@@ -84,6 +95,19 @@
     };
 
     console.log(vm.countriesFound);
+  }
+
+  function NewControllerFunction(SnackFactory, $state){
+    var vm = this;
+    vm.snack = new SnackFactory();
+    vm.snacks = SnackFactory.all;
+    vm.create = function(){
+      console.log('saving');
+      vm.snack.$save(function(snack){
+        $state.go('show', snack);
+      vm.snacks.push(vm.snack);
+      });
+    }
   }
 
   function ShowControllerFunction(SnackFactory, $stateParams){
