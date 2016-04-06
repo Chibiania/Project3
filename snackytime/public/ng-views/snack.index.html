@@ -1,32 +1,36 @@
-<h2>New Snack</h2>
-
-<div data-snack-form data-snack="SnackIndexViewModel.newSnack"></div>
 
 <section data-ng-controller="IndexController as vm">
   <header>
     <h3>SEARCH
-    <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
+      <input type="text" class="form-control" placeholder="search snacks" id="search-box" data-ng-model="vm.countryCategory">
     </h3>
   </header>
-<h1>Filter By:</h1>
-<h2>COUNTRY:</h2>
-<a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
-<div id="countries-holder" data-ng-repeat="country in vm.countriesFound">
+  <h1>Filter By:</h1>
+  <h2>COUNTRY:</h2>
+  <a class="country-links" href="#" data-ng-click="vm.countrySearch('')">All</a>
+  <div id="countries-holder" data-ng-repeat="country in vm.countriesFound">
     <a class="country-links" href="#" data-ng-click="vm.countrySearch(country)">{{country}}</a>
 
-</div>
+  </div>
   <!-- <h2>TASTE:</h2>
   <h2>MOOD:</h2>
   <h2>NUTRITION LEVEL:</h2> -->
 
-<h1>SNACKS</h1>
+  <h1>SNACKS</h1>
   <div data-ng-repeat="snack in vm.snacks | filter: search | filter: vm.countryCategory">
     <div>
 
-      <h2><a data-ui-sref="snackShow({id: snack.id})">{{snack.name}}</a></h2>
+      <h2><a data-ui-sref="show({id: snack.id})">{{snack.name}}</a></h2>
 
 
       <h4>{{snack.country}}</h4>
     </div>
   </div>
 </section>
+
+
+
+<button type="button" data-ng-if="!snack.id" data-ng-click="create()">Add New Snack</button>
+
+
+<!-- <div data-snack-form data-snack="SnackIndexViewModel.newSnack"></div> -->

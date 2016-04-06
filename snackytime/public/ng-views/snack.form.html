@@ -1,5 +1,5 @@
-<form>
-    <input placeholder="Name" data-ng-model="snack.title" />
+<form >
+    <input placeholder="Name" data-ng-model="snack.name" />
     <input placeholder="Image" data-ng-model="snack.image_url" />
     <input placeholder="Country" data-ng-model="snack.country" />
     <textarea placeholder="Description" data-ng-model="snack.description" />
@@ -12,7 +12,7 @@
 
 
   <button type="button" data-ng-if="!snack.id" data-ng-click="create()">Create</button>
-    <div data-ng-if="snack.id">
+    <div data-ng-if=“snack.id">
     <button type="button" data-ng-click="update()">Update</button>
     <button type="button" data-ng-click="delete()">Delete</button>
   </div>
