@@ -1,7 +1,7 @@
 <div class="col-md-6">
-<button data-ng-click="SnackShowVM.doUpdate = true">Update</button>
+  <button data-ng-click="SnackShowVM.doUpdate = true">Update</button>
 
-<div data-ng-if="SnackShowVM.doUpdate" data-snack-form data-snack="SnackShowVM.snack"></div>
+  <div data-ng-if="SnackShowVM.doUpdate" data-snack-form data-snack="SnackShowVM.snack"></div>
 
 </div>
 <div class="col-md-6">
@@ -30,54 +30,52 @@
     <tr>
       <td>
         <p>{{SnackShowVM.snack.country}}</p>
-        <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.country">
       </td>
       <td>
         <p>{{SnackShowVM.snack.description}}</p>
-        <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.description">    </td>
-        <td>
-          <!-- <p>Good for</p> -->
-          <p>{{SnackShowVM.snack.mood}}</p>
-          <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.mood">
-        </td>
-        <td>
-          <p>{{SnackShowVM.snack.taste}}</p>
-          <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.taste">
-        </td>
-        <td>
-          <p>{{SnackShowVM.snack.nutrition_level}}</p>
-          <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.nutrition_level">
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5>Click <a href="{{SnackShowVM.snack.seller_url}}"> <strong>here</strong> </a> to buy this delectable treat.</h5>
-  <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.seller_url">
+      </td>
+      <td>
+        <!-- <p>Good for</p> -->
+        <p>{{SnackShowVM.snack.mood}}</p>
+
+      </td>
+      <td>
+        <p>{{SnackShowVM.snack.taste}}</p>
+
+      </td>
+      <td>
+        <p>{{SnackShowVM.snack.nutrition_level}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Click <a href="{{SnackShowVM.snack.seller_url}}"> <strong>here</strong> </a> to buy this delectable treat.</h5>
+<input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.seller_url">
 
 
-  <h5>What others are saying about {{SnackShowVM.snack.name}}</h5>
-  <!-- ng repeat needed to loop through comments -->
-  <div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
-    <div class="panel">
-      <div class="panel-heading">
-        <p><strong>{{comment.name}}</strong></p>
-      </div>
-      <div class="panel-body">
-        <p>{{comment.message}}</p>
-      </div>
+<h5>What others are saying about {{SnackShowVM.snack.name}}</h5>
+<!-- ng repeat needed to loop through comments -->
+<div data-ng-repeat="comment in CommentIndexViewModel.comments | orderBy: '-created_at'">
+  <div class="panel">
+    <div class="panel-heading">
+      <p><strong>{{comment.name}}</strong></p>
+    </div>
+    <div class="panel-body">
+      <p>{{comment.message}}</p>
     </div>
   </div>
+</div>
 
-  <h5>Add your opinion below</h5>
+<h5>Add your opinion below</h5>
 
-  <form>
-    <div class="form-group">
-      <label for="commentName">Name</label>
-      <input class="form-control" placeholder="What's your name?" data-ng-model="SnackShowVM.comment.name"/>
-    </div>
-    <div class="form-group">
-      <label for="commentMessage">Message</label>
-      <textarea class="form-control" rows="3" placeholder="Share thoughts about {{SnackShowVM.snack.name}}" data-ng-model="SnackShowVM.comment.message"></textarea>
-    </div>
-    <button type="submit" class="btn btn-default" data-ng-click="SnackShowVM.create()">Add Comment</button>
-  </form>
+<form>
+  <div class="form-group">
+    <label for="commentName">Name</label>
+    <input class="form-control" placeholder="What's your name?" data-ng-model="SnackShowVM.comment.name"/>
+  </div>
+  <div class="form-group">
+    <label for="commentMessage">Message</label>
+    <textarea class="form-control" rows="3" placeholder="Share thoughts about {{SnackShowVM.snack.name}}" data-ng-model="SnackShowVM.comment.message"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default" data-ng-click="SnackShowVM.create()">Add Comment</button>
+</form>

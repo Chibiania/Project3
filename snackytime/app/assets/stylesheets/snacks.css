@@ -27,6 +27,19 @@
   top: 57px;
   float: right;
 }
+
+
+
+textarea{
+width: 500px;
+height: 200px;
+}
+
+input.formInput [type="text"]{
+width: 500px;
+height: 100px;
+}
+
 /*#floating-panel {
   position: relative;
   top: 10px;
