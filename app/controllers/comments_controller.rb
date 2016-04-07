@@ -7,14 +7,14 @@ class CommentsController < ApplicationController
   # end
 
   def index
-    # @snack = Snack.find(params[:snack_id])
-    @comments = Comment.all
+    @snack = Snack.find(params[:snack_id])
+    @comments = @snack.comments
     render json: @comments.to_json, status: :ok
   end
 
   def create
-    @snack = Snack.find(params[:snack_id])
-    @comment = @snack.comments.create(comments_params)
+    # @snack = Snack.find(params[:snack_id])
+    @comment = Comment.create(comment_params)
     render json: @comment.to_json, status: :ok
   end
 
