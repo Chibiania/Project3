@@ -42,7 +42,7 @@
   function RouteFunction($stateProvider){
     $stateProvider
     .state("index", {
-      url: "",
+      url: "/",
       templateUrl: "ng-views/snack.index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
@@ -126,7 +126,7 @@
     this.snack = SnackFactory.get({id: $stateParams.id});
     this.editSnack = function(){
       vm.snack.$save();
-      this.toggleForm = !this.toggleForm
+      // this.toggleForm = !this.toggleForm
     }
   }
 
