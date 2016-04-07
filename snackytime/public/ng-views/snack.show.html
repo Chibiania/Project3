@@ -37,10 +37,5 @@
 <p>Comments:</p>
 <!-- ng repeat needed to loop through comments -->
 <div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'">
-<<<<<<< HEAD
-=======
-
-<!-- <div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'"> -->
->>>>>>> comments
   <p> {{comment.name}}: {{comment.message}}</p>
 </div>
