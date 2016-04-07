@@ -57,16 +57,3 @@
   </div>
   <button type="submit" class="btn btn-success" data-ng-click="SnackShowVM.create()">Add Comment</button>
 </form>
-
-<h5>What others are saying about {{SnackShowVM.snack.name}}</h5>
-<!-- ng repeat needed to loop through comments -->
-<div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'">
-  <div class="panel">
-    <div class="panel-heading">
-      <p><strong>{{comment.name}}</strong></p>
-    </div>
-    <div class="panel-body">
-      <p>{{comment.message}}</p>
-    </div>
-  </div>
-</div>

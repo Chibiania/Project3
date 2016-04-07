@@ -129,6 +129,7 @@
 
   function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
+
     vm.snack = SnackFactory.get({id: $stateParams.id});
     console.log(vm.snack);
     // comments logic

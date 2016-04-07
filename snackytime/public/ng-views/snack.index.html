@@ -40,21 +40,15 @@
   <div class='snacks-container'>
     <div class="row">
 
-        <div class="col-xs-2 snack-tile well text-center" data-ng-repeat="snack in vm.snacks | orderBy: '-created_at' | filter: vm.countryCategory | filter: search ">
-          <a data-ui-sref="show({id: snack.id})"><p class="text-uppercase">
+      <div class="col-xs-2 snack-tile well text-center" data-ng-repeat="snack in vm.snacks | orderBy: '-created_at' | filter: vm.countryCategory | filter: search ">
+        <a data-ui-sref="show({id: snack.id})"><p class="text-uppercase">
 
-            <strong class="text-capitalize">{{snack.name}}</strong>
-            <!-- &nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>:{{snack.likes}} -->
-            {{snack.country}}</p>
-            <img class="img-responsive img-rounded" alt="{{snack.name}}" height="100" width="100" data-ng-src="{{snack.image_url}}" />
-            </a>
-          </div>
+          <strong class="text-capitalize">{{snack.name}}</strong>
+          <!-- &nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>:{{snack.likes}} -->
+          {{snack.country}}</p>
+          <img class="img-responsive img-rounded" alt="{{snack.name}}" height="100" width="100" data-ng-src="{{snack.image_url}}" />
+        </a>
       </div>
     </div>
-  </section>
-
-
-
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZxp0qiKTJ205kCk06-bIIgY_UiF-kwDs&callback=initMap">
-</script>
+  </div>
+</section>
