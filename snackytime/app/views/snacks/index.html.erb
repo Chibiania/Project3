@@ -1,11 +1,11 @@
 <%= stylesheet_link_tag "snacks", property: "stylesheet" %>
 <%= javascript_include_tag "snacks" %>
+<%= javascript_include_tag "index-map" %>
 
 <div class="container" data-ng-app="snackApp">
-
-  <h1> <a data-ui-sref="index" href="#">Snack App </a><h1>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DtOJsFLieFE" frameborder="0" allowfullscreen></iframe>
+  <header class="page-header">
+    <h1> <a data-ui-sref="index" href="#">The Snack App </a><h1>
+    </header>
 
     <main data-ui-view></main>
 

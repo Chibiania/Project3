@@ -1,3 +1,107 @@
 /*
 *= require bootstrap
 */
+
+html, body{
+  height: 100%;
+}
+html{
+  margin: auto;
+  /*background-color: aquamarine;*/
+}
+body{
+  /*background-color: orange;*/
+}
+.container{
+  max-width: 750px;
+  min-width: 480px;
+
+}
+a {
+  /*text-decoration: none;*/
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: red;
+
+}
+.page-header a{
+  color: aquamarine;
+  text-decoration: none;
+}
+.page-header a:hover{
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+.country-categories {
+  display: inline-block;
+  text-align: center;
+}
+#map-holder{
+  position: fixed;
+  top: 340px;
+  right: 100px;
+  height: 200px;
+  width: 200px;
+}
+#map {
+  height: 100%;
+  width: auto;
+}
+.snack-tile {
+  height: 200px;
+  background-color: maroon;
+}
+.snack-tile a{
+  color: white;
+}
+.snack-tile p{
+  height: 100px;
+}
+.snack-tile:hover{
+  background-color: red;
+  color: white;
+}
+.container-fluid a{
+  padding: 15px;
+  margin: 5px 15px;
+  background: red;
+  color: white;
+}
+.container-fluid a:hover{
+  border: red thin solid;
+  border-radius: 20%;
+  color: white;
+
+}
+
+.page-controls {
+  display: inline-block;
+}
+.add-btn {
+  position: relative;
+  top: 57px;
+  float: right;
+}
+
+.form-control{
+  width: 50%;
+}
+#address{
+  width:200%;
+}
+
+/*#floating-panel {
+position: relative;
+top: 10px;
+z-index: 5;
+background-color: #fff;
+padding: 5px;
+border: 1px solid #999;
+text-align: center;
+font-family: 'Roboto','sans-serif';
+line-height: 30px;
+padding-left: 10px;
+}*/

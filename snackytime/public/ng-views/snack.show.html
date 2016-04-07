@@ -1,22 +1,64 @@
-<h2>{{SnackShowVM.snack.name}}</h2>
+<div class="col-md-6">
+  <h4><a data-ui-sref="index">HOME / SNACK INDEX</a></h4>
+  <h2>{{SnackShowVM.snack.name}}
+    <!-- &nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>:{{SnackShowVM.snack.likes}} -->
+  </h2>
+</div>
 
-<img data-ng-src="{{SnackShowVM.snack.image_url}}" src="#" alt="SnackShowVMsnack.name" />
+<div class="col-md-12">
+  <img class="img-responsive" data-ng-src="{{SnackShowVM.snack.image_url}}" alt="{{SnackShowVM.snack.name}}" height="300" width="300"/>
+  <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.image_url">
+</div>
 
-<!-- <p>{{SnackShowVM.snack.like}}</p> -->
-<!-- <video data-ng-src="{{SnackShowVM.snack.video_url}}" ></video> -->
+<table class="table">
+  <thead>
+    <tr  class="info">
+      <th>Country</th>
+      <th>Description</th>
+      <th>Mood</th>
+      <th>Taste</th>
+      <th>Nutrtition Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>{{SnackShowVM.snack.country}}</p>
+        <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.country"> -->
+      </td>
+      <td>
+        <p>{{SnackShowVM.snack.description}}</p>
+        <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.description">    </td> -->
+        <td>
+          <!-- <p>Good for</p> -->
+          <p>{{SnackShowVM.snack.mood}}</p>
+          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.mood"> -->
+        </td>
+        <td>
+          <p>{{SnackShowVM.snack.taste}}</p>
+          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.taste"> -->
+        </td>
+        <td>
+          <p>{{SnackShowVM.snack.nutrition_level}}</p>
+          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.nutrition_level"> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<p>{{SnackShowVM.snack.country}}</p>
-<p>{{SnackShowVM.snack.description}}</p>
 
-<p>Good for</p>
-<p>Mood: {{SnackShowVM.snack.mood}}, Taste: {{SnackShowVM.snack.taste}}, Nutrition Level: {{SnackShowVM.snack.nutrition_level}}</p>
+  <h5>Click <a href="{{SnackShowVM.snack.seller_url}}"> <strong>here</strong> </a> to buy this delectable treat.</h5>
 
-<p><a href="{{SnackShowVM.snack.seller_url}}">Buyer Info </a> </p>
+  <label>Update Snack <input type="checkbox" ng-model="checked" ng-init="checked=false" /></label><br/>
+  <span ng-if="checked" >
+    <div  data-snack-form data-snack="SnackShowVM.snack"></div>
+  </span>
 
-<p>Add Comment:</p>
-<!-- need a comments controller? -->
-<!-- how to incorporate comments into here? -->
-<!-- we need a form for comments...don't know if this is right -->
+
+  <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.seller_url"> -->
+
+
+<!-- <p>Add Comment:</p>
 <form name="commentForm">
   <input placeholder="Name" data-ng-model="SnackShowVM.comment.name"/>
   <input placeholder="Message" data-ng-model="SnackShowVM.comment.message"/>
@@ -24,9 +66,34 @@
 </form>
 
 <p>Comments:</p>
-<!-- ng repeat needed to loop through comments -->
 <div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'">
 
-<!-- <div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'"> -->
   <p> {{comment.name}}: {{comment.message}}</p>
-</div>
+</div> -->
+
+<h5>Add your opinion below</h5>
+
+<form>
+  <div class="form-group">
+    <label for="commentName">Name</label>
+    <input class="form-control" placeholder="What's your name?" data-ng-model="SnackShowVM.comment.name"/>
+  </div>
+  <div class="form-group">
+    <label for="commentMessage">Message</label>
+    <textarea class="form-control" rows="3" placeholder="Share thoughts about {{SnackShowVM.snack.name}}" data-ng-model="SnackShowVM.comment.message"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success" data-ng-click="SnackShowVM.create()">Add Comment</button>
+</form>
+
+  <h5>What others are saying about {{SnackShowVM.snack.name}}</h5>
+  <!-- ng repeat needed to loop through comments -->
+  <div data-ng-repeat="comment in SnackShowVM.comments | orderBy: '-created_at'">
+    <div class="panel">
+      <div class="panel-heading">
+        <p><strong>{{comment.name}}</strong></p>
+      </div>
+      <div class="panel-body">
+        <p>{{comment.message}}</p>
+      </div>
+    </div>
+  </div>
