@@ -81,13 +81,12 @@
     return $resource("/snacks/:snack_id/comments/:id", {snack_id:"@snack_id"}, {
       update: {method: "PUT"}
     });
-
-    // return $resource("/comments/:id");
   }
 
   //IndexControllerFunction
   function IndexControllerFunction(Snack) {
     var vm = this;
+
     // lists all snacks and properties
     vm.snacks = Snack.all;
     vm.countriesFound = [];
@@ -131,26 +130,22 @@
   function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
     vm.snack = SnackFactory.get({id: $stateParams.id});
-    console.log(vm.snack);
 
-    vm.formDisplay = false;
-    vm.toggleForm = function(){
-      vm.formDisplay = vm.formDisplay === false ? true:  false;
-    }
+    //things cam was working on eariler
+    // vm.formDisplay = false;
+    // vm.toggleForm = function(){
+    //   vm.formDisplay = vm.formDisplay === false ? true:  false;
+    // }
+
     // comments logic
     vm.comments = CommentFactory.query({snack_id: $stateParams.id});
-    console.log(vm.comments)
     vm.comment = new CommentFactory({snack_id: $stateParams.id});
-    // vm.snack_id = $stateParams.id;
-    // vm.comment.snack_id = vm.snack;
+
     this.create = function(){
       vm.comment.$save(function(response){
         vm.comments.push(response);
       });
       vm.comment = {};
-      console.log(vm.comment);
-      console.log(vm.comment.name);
-      console.log(vm.comment.message);
     };
   }
 

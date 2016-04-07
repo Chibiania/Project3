@@ -24,23 +24,17 @@
     <tr>
       <td>
         <p>{{SnackShowVM.snack.country}}</p>
-        <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.country"> -->
       </td>
       <td>
         <p>{{SnackShowVM.snack.description}}</p>
-        <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.description">    </td> -->
         <td>
-          <!-- <p>Good for</p> -->
           <p>{{SnackShowVM.snack.mood}}</p>
-          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.mood"> -->
         </td>
         <td>
           <p>{{SnackShowVM.snack.taste}}</p>
-          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.taste"> -->
         </td>
         <td>
           <p>{{SnackShowVM.snack.nutrition_level}}</p>
-          <!-- <input ng-show="SnackShowVM.toggleForm == true" type="text" ng-model="SnackShowVM.snack.nutrition_level"> -->
         </td>
       </tr>
     </tbody>
@@ -49,8 +43,8 @@
 
   <h5>Click <a href="{{SnackShowVM.snack.seller_url}}"> <strong>here</strong> </a> to buy this delectable treat.</h5>
 
-  <!-- <label>Update Snack <input type="checkbox" data-ng-model="checked" data-ng-init="checked=false" /></label><br/>
-  <span ng-if="checked" > -->
+  <label>Update Snack <input type="checkbox" data-ng-model="checked" data-ng-init="checked=false" /></label><br/>
+  <span ng-if="checked" >
     <div  data-snack-form data-snack="SnackShowVM.snack"></div>
   </span>
 
