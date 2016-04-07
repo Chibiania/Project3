@@ -1,6 +1,5 @@
-<label>Update Snack <input type="checkbox" data-ng-click="toggleForm" data-ng-init="checked=false" /></label><br/>
 
-<form ng-hide="formDisplay" >
+<form>
   <div class="form-group">
     <label for="snackName">Name</label>
     <input class="form-control" placeholder="Name" data-ng-model="snack.name" />
@@ -43,7 +42,7 @@
 
   <button type="button" data-ng-if="!snack.id" data-ng-click="create()" class="btn btn-success">Create</button>
     <div data-ng-if="snack.id">
-    <button type="button" data-ng-click="update(); toggleForm()" class="btn btn-primary">Update</button>
+    <button type="button" data-ng-click="update()" class="btn btn-primary">Update</button>
     <button type="button" data-ng-click="delete()" class="btn btn-danger">Delete</button>
   </div>
 </form>

@@ -116,13 +116,12 @@
   function NewControllerFunction(SnackFactory, $state){
     var vm = this;
     vm.snack = new SnackFactory();
-    // vm.snacks = SnackFactory.all;
+    vm.snacks = SnackFactory.all;
     // vm.create = function(){
     //   console.log('saving');
     //   vm.snack.$save(function(snack){
     //     $state.go('show', snack);
     //   vm.snacks.push(vm.snack);
-    //
     //   });
     // }
   }
@@ -132,11 +131,6 @@
     var vm = this;
     vm.snack = SnackFactory.get({id: $stateParams.id});
     console.log(vm.snack);
-
-    vm.formDisplay = false;
-    vm.toggleForm = function(){
-      vm.formDisplay = vm.formDisplay === false ? true:  false;
-    }
     // comments logic
     vm.comments = CommentFactory.query({snack_id: $stateParams.id});
     console.log(vm.comments)
@@ -160,9 +154,10 @@
       scope: {
         snack: "="
       },
-      link: function(scope){
+      link: function(scope){;
         scope.create = function(){
           scope.snack.$save(function(response){
+            SnackFactory.all.push(scope.snack);
             $state.go("show", {id: response.id}, {reload: true});
           });
         }
