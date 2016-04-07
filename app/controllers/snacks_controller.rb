@@ -44,7 +44,7 @@ class SnacksController < ApplicationController
 
   private
   def snack_params
-    params.require(:snack).permit(:name, :image_url, :country, :description, :mood, :taste, :nutrition_level, :seller_url, :video_url)
+    params.require(:snack).permit(:name, :image_url, :country, :description, :mood, :taste, :nutrition_level, :seller_url, :video_url, :likes)
   end
 
 end
