@@ -16,6 +16,17 @@
   height: 100%;
   width: auto;
 }
+.snack-tile {
+  height: 200px;
+}
+.page-controls {
+  display: inline-block;
+}
+.add-btn {
+  position: relative;
+  top: 57px;
+  float: right;
+}
 /*#floating-panel {
   position: relative;
   top: 10px;

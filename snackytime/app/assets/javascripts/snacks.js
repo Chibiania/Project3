@@ -42,7 +42,7 @@
   function RouteFunction($stateProvider){
     $stateProvider
     .state("index", {
-      url: "/",
+      url: "",
       templateUrl: "ng-views/snack.index.html",
       controller: 'IndexController',
       controllerAs:'SnackIndexVM'
