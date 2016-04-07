@@ -1,19 +1,49 @@
-<form>
-    <input placeholder="Name" data-ng-model="snack.name" />
-    <input placeholder="Image" data-ng-model="snack.image_url" />
-    <input placeholder="Country" data-ng-model="snack.country" />
-    <textarea placeholder="Description" data-ng-model="snack.description" />
-    <input placeholder="Mood" data-ng-model="snack.mood" />
-    <input placeholder="taste" data-ng-model="snack.taste" />
-    <input placeholder="Nutrition_level" data-ng-model="snack.nutrition_level" />
-    <input placeholder="Seller_url" data-ng-model="snack.seller_url" />
+<!-- <label>Update Snack <input type="checkbox" data-ng-click="toggleForm" data-ng-init="checked=false" /></label><br/> -->
 
+<form ng-hide="formDisplay" >
+  <div class="form-group">
+    <label for="snackName">Name</label>
+    <input class="form-control" placeholder="Name" data-ng-model="snack.name" />
+  </div>
 
+    <div class="form-group">
+      <label for="snackImage">Image</label>
+      <textarea class="form-control" rows="3" placeholder="Image" data-ng-model="snack.image_url"></textarea>
+    </div>
 
+    <div class="form-group">
+      <label for="snackCountry">Country</label>
+      <input class="form-control" placeholder="Country" data-ng-model="snack.country" />
+    </div>
 
-  <button type="button" data-ng-if="!snack.id" data-ng-click="create()">Create</button>
+    <div class="form-group">
+      <label for="snackDescription">Description</label>
+    <textarea class="form-control" rows="3" placeholder="Description" data-ng-model="snack.description"></textarea>
+  </div>
+
+    <div class="form-group">
+      <label for="snackMood">Mood</label>
+      <input class="form-control" placeholder="Mood" data-ng-model="snack.mood" />
+    </div>
+
+    <div class="form-group">
+      <label for="snackTaste">Taste</label>
+      <input class="form-control" placeholder="Taste" data-ng-model="snack.taste" />
+    </div>
+
+    <div class="form-group">
+      <label for="snackNL">Nutrition Level</label>
+      <input class="form-control" placeholder="Nutrition_level" data-ng-model="snack.nutrition_level" />
+    </div>
+
+    <div class="form-group">
+      <label for="snackSeller">Seller Url</label>
+      <textarea class="form-control" rows="3"  placeholder="Seller_url" data-ng-model="snack.seller_url"></textarea>
+    </div>
+
+  <button type="button" data-ng-if="!snack.id" data-ng-click="create()" class="btn btn-success">Create</button>
     <div data-ng-if="snack.id">
-    <button type="button" data-ng-click="update()">Update</button>
-    <button type="button" data-ng-click="delete()">Delete</button>
+    <button type="button" data-ng-click="update(); toggleForm()" class="btn btn-primary">Update</button>
+    <button type="button" data-ng-click="delete()" class="btn btn-danger">Delete</button>
   </div>
 </form>

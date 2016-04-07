@@ -1,6 +1,40 @@
 /*
 *= require bootstrap
 */
+
+html, body{
+  height: 100%;
+}
+html{
+  margin: auto;
+  /*background-color: aquamarine;*/
+}
+body{
+  /*background-color: orange;*/
+}
+.container{
+  max-width: 750px;
+  min-width: 480px;
+
+}
+a {
+  /*text-decoration: none;*/
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: hotpink;
+
+}
+.page-header a{
+  color: black;
+  text-decoration: none;
+}
+.page-header a:hover{
+  padding: 20px;
+  background-color: hotpink;
+  color: white;
+}
 .country-categories {
   display: inline-block;
   text-align: center;
@@ -18,7 +52,29 @@
 }
 .snack-tile {
   height: 200px;
+  /*background-color: hotpink;*/
 }
+.snack-tile a{
+  color: black;
+}
+.snack-tile p{
+  height: 100px;
+}
+.snack-tile:hover{
+  background-color: hotpink;
+  color: white;
+}
+.container-fluid a{
+  padding: 15px;
+  margin: 5px 15px;
+}
+.container-fluid a:hover{
+  border: hotpink  solid;
+  border-radius: 20%;
+  color: white;
+
+}
+
 .page-controls {
   display: inline-block;
 }
@@ -28,29 +84,22 @@
   float: right;
 }
 
-.col-xs-2-snack-tile{
-  background-color: blue:
+.form-control{
+  width: 50%;
 }
-
-textarea{
-width: 500px;
-height: 200px;
-}
-
-input.formInput [type="text"]{
-width: 500px;
-height: 100px;
+#address{
+  width:200%;
 }
 
 /*#floating-panel {
-  position: relative;
-  top: 10px;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
-  text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
+position: relative;
+top: 10px;
+z-index: 5;
+background-color: #fff;
+padding: 5px;
+border: 1px solid #999;
+text-align: center;
+font-family: 'Roboto','sans-serif';
+line-height: 30px;
+padding-left: 10px;
 }*/

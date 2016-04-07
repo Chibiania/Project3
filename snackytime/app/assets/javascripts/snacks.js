@@ -19,6 +19,10 @@
     "$resource",
     SnackFactoryFunction
   ])
+  .factory("CommentFactory", [
+    "$resource",
+    CommentFactoryFunction
+  ])
   .controller("IndexController", [
     "SnackFactory",
     IndexControllerFunction
@@ -30,6 +34,7 @@
   ])
   .controller("ShowController", [
     "SnackFactory",
+    "CommentFactory",
     "$stateParams",
     ShowControllerFunction
   ])
@@ -48,7 +53,6 @@
       controllerAs:'SnackIndexVM'
     })
     .state("new", {
-
       url:'/new',
       templateUrl: "ng-views/snack.new.html",
       controller: 'NewController',
@@ -74,12 +78,15 @@
 
   //CommentFactoryFunction
   function CommentFactoryFunction($resource){
-
+    return $resource("/snacks/:snack_id/comments/:id", {snack_id:"@snack_id"}, {
+      update: {method: "PUT"}
+    });
   }
 
   //IndexControllerFunction
   function IndexControllerFunction(Snack) {
     var vm = this;
+
     // lists all snacks and properties
     vm.snacks = Snack.all;
     vm.countriesFound = [];
@@ -105,7 +112,6 @@
 
   }
 
-
   function NewControllerFunction(SnackFactory, $state){
     var vm = this;
     vm.snack = new SnackFactory();
@@ -121,13 +127,26 @@
   }
 
 
-  function ShowControllerFunction(SnackFactory, $stateParams){
+  function ShowControllerFunction(SnackFactory, CommentFactory, $stateParams){
     var vm = this;
-    this.snack = SnackFactory.get({id: $stateParams.id});
-    this.editSnack = function(){
-      vm.snack.$save();
-      // this.toggleForm = !this.toggleForm
-    }
+    vm.snack = SnackFactory.get({id: $stateParams.id});
+
+    //things cam was working on eariler
+    // vm.formDisplay = false;
+    // vm.toggleForm = function(){
+    //   vm.formDisplay = vm.formDisplay === false ? true:  false;
+    // }
+
+    // comments logic
+    vm.comments = CommentFactory.query({snack_id: $stateParams.id});
+    vm.comment = new CommentFactory({snack_id: $stateParams.id});
+
+    this.create = function(){
+      vm.comment.$save(function(response){
+        vm.comments.push(response);
+      });
+      vm.comment = {};
+    };
   }
 
   function SnackFormDirectiveFunction(SnackFactory, $state){
