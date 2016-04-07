@@ -23,16 +23,16 @@ a {
 a:hover{
   text-decoration: none;
   color: white;
-  background-color: red;
+  background-color: hotpink;
 
 }
 .page-header a{
-  color: aquamarine;
+  color: black;
   text-decoration: none;
 }
 .page-header a:hover{
   padding: 20px;
-  background-color: red;
+  background-color: hotpink;
   color: white;
 }
 .country-categories {
@@ -52,26 +52,24 @@ a:hover{
 }
 .snack-tile {
   height: 200px;
-  background-color: maroon;
+  /*background-color: hotpink;*/
 }
 .snack-tile a{
-  color: white;
+  color: black;
 }
 .snack-tile p{
   height: 100px;
 }
 .snack-tile:hover{
-  background-color: red;
+  background-color: hotpink;
   color: white;
 }
 .container-fluid a{
   padding: 15px;
   margin: 5px 15px;
-  background: red;
-  color: white;
 }
 .container-fluid a:hover{
-  border: red thin solid;
+  border: hotpink  solid;
   border-radius: 20%;
   color: white;
 
