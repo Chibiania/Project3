@@ -133,12 +133,10 @@
     vm.snack = SnackFactory.get({id: $stateParams.id});
     console.log(vm.snack);
 
-    // vm.hide = false;
-    // vm.editSnack = function(){
-    //   vm.snack.$save();
-    //   vm.toggleForm = !this.toggleForm
-    // }
-
+    vm.formDisplay = false;
+    vm.toggleForm = function(){
+      vm.formDisplay = vm.formDisplay === false ? true:  false;
+    }
     // comments logic
     vm.comments = CommentFactory.query({snack_id: $stateParams.id});
     console.log(vm.comments)
@@ -147,24 +145,13 @@
     // vm.comment.snack_id = vm.snack;
     this.create = function(){
       vm.comment.$save(function(response){
-        // console.log("45***************");
-        // console.log(response);
         vm.comments.push(response);
-        // vm.comment.name = vm.comment.message = " ";
-        // vm.comment.$setPristine();
       });
       vm.comment = {};
-      // setup with snacks db (gets added to the end of the db)...does comments need its own db?
-      // is save as a new snack but needs to be saved as a comment with comment attributes
-      //
       console.log(vm.comment);
       console.log(vm.comment.name);
       console.log(vm.comment.message);
-      // console.log(vm.comments.length);
     };
-
-
-
   }
 
   function SnackFormDirectiveFunction(SnackFactory, $state){
