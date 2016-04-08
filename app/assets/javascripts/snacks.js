@@ -69,7 +69,7 @@
 
   // SnackFactoryFunction
   function SnackFactoryFunction($resource){
-    var Snack = $resource("http://localhost:3000/snacks/:id.json", {}, {
+    var Snack = $resource("/snacks/:id.json", {}, {
       update: {method: "PUT"}
     });
     Snack.all = Snack.query();
