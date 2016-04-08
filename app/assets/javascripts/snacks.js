@@ -158,6 +158,7 @@
       link: function(scope){
         scope.create = function(){
           scope.snack.$save(function(response){
+            SnackFactory.all.push(response);
             $state.go("show", {id: response.id}, {reload: true});
           });
         }
