@@ -16,7 +16,7 @@ Also See a custom directive in there. A big refactoring exercise would be to sep
 
 **Performing.** No complaints here! Was easy to read your code. Might be helpful for other people reading your code to include some comments with your longer Angular controller methods. Again, a stretch goal would be to refactor Angular components into separate files so it's even easier to located a given section of your front-end code.
 
-Make sure to look at the code comments I left in your app. [Check them out here]().
+Make sure to look at the code comments I left in your app. [Check them out here](https://github.com/Chibiania/Project3/pull/26).
 
 ## Deployment and Functionality
 
