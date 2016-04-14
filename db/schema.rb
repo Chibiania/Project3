@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407131300) do
+ActiveRecord::Schema.define(version: 20160406004536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20160407131300) do
   create_table "snacks", force: :cascade do |t|
     t.string   "name"
     t.string   "image_url"
+    # AM: In future iterations of your project, perhaps you will want to store more information about a country. If that's the case, consider making country a model.
+    # AM: (This isn't necessary though. Just looking ahead.)
     t.string   "country"
     t.text     "description"
     t.string   "mood"
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160407131300) do
     t.string   "video_url"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    # AM: How can you make it so that a user can only like something once (assuming you have a user model)? (Hint: many-to-many)
     t.integer  "likes"
   end
 

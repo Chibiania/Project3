@@ -3,6 +3,7 @@ class SnacksController < ApplicationController
   def index
     respond_to do |format|
       format.html
+      # AM: Look into using "include:" so that you can include comments in your Snack API response. Neat trick that makes your API "MEAN"-er.
       format.json{ render json: Snack.all }
     end
   end
@@ -12,6 +13,8 @@ class SnacksController < ApplicationController
     render json: @snack.to_json, status: :ok
   end
 
+  # AM: Plz remove commented-out code from the master branch of your project submission!
+  # AM: If you really want to keep it, consider keeping it in a separate branch (e.g., code-with-comments).
   # do we need this??? I think this is just in case we want a 'new' rails view --Cam
   # new page
   # def new
