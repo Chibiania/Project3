@@ -24,6 +24,8 @@ class CommentsController < ApplicationController
   end
 
   private
+  # AM: I would EITHER specificy a comment's snack in the controller action OR strong params. No need to do both.
+  # AM: And if you think about it, if the comment's snack is being determined by the snack_id in the route, you don't want to allow the user to select the snack via his/her input.
   def comment_params
     params.require(:comment).permit(:name, :message, :snack_id)
   end

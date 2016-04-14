@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# AM: I like to group gems that are specific to a dev environment (e.g., development, production) together in the Gemfile towards the bottom.
 gem "rails_12factor", group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

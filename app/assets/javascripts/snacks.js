@@ -60,6 +60,7 @@
 
     })
     .state("show", {
+      // AM: I would suggest namespacing this to "/snacks/:id". You never know if you're going to want to incorporate another major model into your app.
       url: "/:id",
       templateUrl: "ng-views/snack.show.html",
       controller: "ShowController",
