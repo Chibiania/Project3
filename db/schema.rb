@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160406004536) do
 
   add_index "comments", ["snack_id"], name: "index_comments_on_snack_id", using: :btree
 
+  # AM: There is a lot of info stored in each Snack!
   create_table "snacks", force: :cascade do |t|
     t.string   "name"
     t.string   "image_url"
