@@ -1,7 +1,7 @@
-# Project3
+# Project 3
 ## The Snack App
 
-###This a an angular application with a rails backend that allows users to view snacks from around the world. Users may also comment on, update, add, and delete snacks.
+###This an angular application with a rails backend that allows users to view snacks from around the world. Users may also comment on, update, add, and delete snacks.
 
 ###This project was a collaborative effort between:
 - [Cam Latimer](https://github.com/CamLatimer)
