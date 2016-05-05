@@ -5,7 +5,7 @@
 
 ###This project was a collaborative effort between:
 - [Cam Latimer](https://github.com/CamLatimer)
-- [Toni Langley](https://github.com/Chibiania)
+- [Toni Langley](https://github.com/tvlangley)
 - [Woo Yun](https://github.com/hh747hh)
 
 ####Technologies used
@@ -19,7 +19,7 @@
 
 #### The approach taken
 
-[User stories](https://github.com/Chibiania/Project3/blob/master/planning/user_stories.md) divided into Bronze, Silver, and Gold levels.
+[User stories](https://github.com/tvlangley/the-snack-app/blob/master/planning/user_stories.md) divided into Bronze, Silver, and Gold levels.
 
 
 #### Installation instructions
